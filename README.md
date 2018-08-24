@@ -4,12 +4,8 @@ Educational project for FSD
 
 ## Preview
 
-Avaliable on GitHub Pages [CV](https://yur-ok.github.io/FSD_CV/)
+Avaliable on GitHub Pages -> <a href="https://yur-ok.github.io/FSD_CV/">CV</a>
 
 ## Authors
 
-* **Yuriy Bachevskiy** - aka **Yur-ok** - [Yuriy Bachevskiy](https://github.com/Yur-ok)
-
-## License
-
-This porject is licensed under the MIT Licence - see the [Licence.md](Licence.md) file for details 
+* **Yuriy Bachevskiy** - (aka **Yur-ok**) - <a href="https://github.com/Yur-ok" target="_blank">Yuriy Bachevskiy</a>
