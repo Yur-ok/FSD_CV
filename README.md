@@ -8,4 +8,4 @@ Avaliable on GitHub Pages -> <a href="https://yur-ok.github.io/FSD_CV/" target="
 
 ## Authors
 
-* **Yuriy Bachevskiy** - (aka **Yur-ok**) - <a href="https://github.com/Yur-ok" target="_blank">Yuriy Bachevskiy</a>
+* **Yuriy Bachevskiy** - (aka **Yur-ok**) -> <a href="https://github.com/Yur-ok" target="_blank">Yuriy Bachevskiy</a>
