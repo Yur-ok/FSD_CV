@@ -1,0 +1,59 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.coll-1 {
+	width: 40%;
+	/*border: solid 2px red;*/
+	float: left;
+	display: block;
+}
+
+.coll-2 {
+	/*width: auto;*/
+	/*border: solid 2px black;*/
+	float: left;
+	display: block;
+}
+
+.image {
+	padding: 100px 150px 50px;
+}
+
+.profile_img {
+	width: 200px;
+	height: 200px;
+	background: #3d6cb0;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	box-shadow: 0 0 0 14px #fff,
+				0 0 0 15px #3d6cb0;
+}
+
+.profile_name {
+	text-transform: uppercase;
+	font-size: 50px;
+	white-space: nowrap;
+	display: inline-block;
+	text-align: center;
+	border: solid 2px red;
+	background: yellow;
+}
+
+.profile_surname {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.prof {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.education {
+
+}
