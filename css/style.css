@@ -1,17 +1,9 @@
-body {
-	padding: 0px;
-	margin: 0px;
-}
+/*body {*/
+	/*padding: 0px;*/
+	/*margin: 0px;*/
+/*}*/
 .coll-1 {
 	width: 40%;
-	/*border: solid 2px red;*/
-	float: left;
-	display: block;
-}
-
-.coll-2 {
-	/*width: auto;*/
-	/*border: solid 2px black;*/
 	float: left;
 	display: block;
 }
@@ -33,23 +25,23 @@ body {
 
 .profile_name {
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 52px;
 	white-space: nowrap;
 	display: inline-block;
 	text-align: center;
-	border: solid 2px red;
-	background: yellow;
+	/*border: solid 2px red;*/
+	/*background: yellow;*/
 }
 
 .profile_surname {
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 62px;
 	font-weight: bold;
 }
 
 .prof {
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 }
 
