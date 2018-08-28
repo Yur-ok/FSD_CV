@@ -1,7 +1,17 @@
-/*body {*/
-	/*padding: 0px;*/
-	/*margin: 0px;*/
-/*}*/
+body {
+	background-color: chocolate;
+}
+
+.container {
+	height: 100%;
+	background-color: white;
+	display: block;
+	max-width: 1920px;
+	min-width: 600px;
+	padding: 118px 89px 148px 94px;
+	/*alignment: center;*/
+}
+
 .coll-1 {
 	width: 40%;
 	float: left;
@@ -25,7 +35,7 @@
 
 .profile_name {
 	text-transform: uppercase;
-	font-size: 52px;
+	font-size: 81px;
 	white-space: nowrap;
 	display: inline-block;
 	text-align: center;
@@ -35,7 +45,7 @@
 
 .profile_surname {
 	text-transform: uppercase;
-	font-size: 62px;
+	font-size: 96px;
 	font-weight: bold;
 }
 
@@ -48,4 +58,62 @@
 
 .education {
 
+}
+
+
+.round {
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #e6e6e6;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.round.fill {
+	background: #3d6cb0;
+}
+
+.bar {
+	width: 428px;
+	height: 35px;
+	background: #e6e6e6;
+}
+
+.bar.Photoshop {
+	width: 390px;
+	height: 35px;
+	background-color: #3d6cb0;
+}
+
+.bar.Illustrator {
+	width: 302px;
+	height: 35px;
+	background-color: #3d6cb0;
+}
+
+.bar.Indesign {
+	width: 240.88px;
+	height: 35px;
+	background-color: #3d6cb0;
+}
+
+.bar.Dreamwaver {
+	width: 355.60px;
+	height: 35px;
+	background-color: #3d6cb0;
+}
+
+.bar.Effects {
+	width: 263.81px;
+	height: 35px;
+	background-color: #3d6cb0;
+}
+
+.bar.Html {
+	width: 390px;
+	height: 35px;
+	background-color: #3d6cb0;
 }
