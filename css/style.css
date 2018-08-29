@@ -1,4 +1,28 @@
+@font-face {
+	font-family: 'MyriadPro-BoldIt';
+	/*src: url('fonts/MyriadPro-BoldIt.eot');*/
+	src: local('☺'), url('fonts/MyriadPro-BoldIt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	/*src: url('fonts/MyriadPro-Regular.eot');*/
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Myriad Pro", Arial, sans-serif;
+	font-size: 24px;
+	line-height: normal;
+	font-weight: 400;
+	color: #000;
+
 	background-color: chocolate;
 }
 
@@ -12,11 +36,12 @@ body {
 	/*alignment: center;*/
 }
 
-.coll-1 {
-	width: 40%;
-	float: left;
-	display: block;
-}
+/*.coll-1 {*/
+	/*width: 40%;*/
+	/*float: left;*/
+	/*display: block;*/
+    /*margin-left: 30px;*/
+/*}*/
 
 .image {
 	padding: 100px 150px 50px;
@@ -55,11 +80,17 @@ body {
 	font-weight: bold;
 }
 
+.contact {
+}
+
+.skills {
+	text-align: center;
+}
+
 
 .education {
 
 }
-
 
 .round {
 	width: 20px;
@@ -67,52 +98,52 @@ body {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	background: #e6e6e6;
+	background-color: #e6e6e6;
 	display: inline-block;
 	margin-right: 5px;
 }
 
 .round.fill {
-	background: #3d6cb0;
+	background-color: #3d6cb0;
 }
 
 .bar {
 	width: 428px;
 	height: 35px;
-	background: #e6e6e6;
+	background-color: #e6e6e6;
 }
 
-.bar.Photoshop {
+.fillbar.Photoshop {
 	width: 390px;
 	height: 35px;
 	background-color: #3d6cb0;
 }
 
-.bar.Illustrator {
+.fillbar.Illustrator {
 	width: 302px;
 	height: 35px;
 	background-color: #3d6cb0;
 }
 
-.bar.Indesign {
+.fillbar.Indesign {
 	width: 240.88px;
 	height: 35px;
 	background-color: #3d6cb0;
 }
 
-.bar.Dreamwaver {
+.fillbar.Dreamwaver {
 	width: 355.60px;
 	height: 35px;
 	background-color: #3d6cb0;
 }
 
-.bar.Effects {
+.fillbar.Effects {
 	width: 263.81px;
 	height: 35px;
 	background-color: #3d6cb0;
 }
 
-.bar.Html {
+.fillbar.Html {
 	width: 390px;
 	height: 35px;
 	background-color: #3d6cb0;
