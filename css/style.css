@@ -1,14 +1,12 @@
 @font-face {
-	font-family: 'MyriadPro-BoldIt';
-	/*src: url('fonts/MyriadPro-BoldIt.eot');*/
-	src: local('☺'), url('fonts/MyriadPro-BoldIt.woff') format('woff');
+	font-family: 'MyriadPro-Bold';
+	src: local('☺'), url('../fonts/MyriadPro-Bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'MyriadPro-Regular';
-	/*src: url('fonts/MyriadPro-Regular.eot');*/
-	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff');
+	src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,33 +15,38 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Myriad Pro", Arial, sans-serif;
+    font-family: "MyriadPro-Regular", Arial, sans-serif;
 	font-size: 24px;
 	line-height: normal;
 	font-weight: 400;
 	color: #000;
+}
 
-	background-color: chocolate;
+section > div > h2 {
+    font-family: "MyriadPro-Bold", Arial, sans-serif;
+    font-size: 64px;
+    line-height: normal;
+    color: #3d6cb0;
 }
 
 .container {
 	height: 100%;
 	background-color: white;
-	display: block;
-	max-width: 1920px;
-	min-width: 600px;
+	display: inline-block;
 	padding: 118px 89px 148px 94px;
-	/*alignment: center;*/
+	alignment: center;
 }
 
-/*.coll-1 {*/
-	/*width: 40%;*/
-	/*float: left;*/
-	/*display: block;*/
-    /*margin-left: 30px;*/
-/*}*/
+.coll-1 {
+	width: 40%;
+	float: left;
+    display: block;
+    margin-right: 119px;
+}
 
-.image {
+/*Bio block*/
+
+.bio {
 	padding: 100px 150px 50px;
 }
 
@@ -80,16 +83,73 @@ body {
 	font-weight: bold;
 }
 
+/*Contact block*/
+
+.line {
+    height: 8px;
+    width: 266px;
+    background-color: #3d6cb0;
+    display: inline-block;
+}
+
+.contact .img {
+    display: inline-block;
+    width: 111px;
+    height: 111px;
+    background-image: url("../img/Phone.png");
+}
+
 .contact {
 }
 
-.skills {
-	text-align: center;
-}
 
+/*Educational block*/
+
+.education .img {
+    display: inline-block;
+    width: 115px;
+    height: 111px;
+    background: url(../img/EDUCATION.png);
+    background-repeat: no-repeat;
+}
 
 .education {
 
+}
+
+/*Experience block*/
+.experience .img {
+    display: inline-block;
+    width: 120px;
+    height: 115px;
+    background-image: url(../img/EXPERIENCE.png);
+    background-repeat: no-repeat;
+}
+
+.experience {
+
+}
+
+.bold {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/*Skills block*/
+.skills .img {
+    display: inline-block;
+    width: 111px;
+    height: 111px;
+    background-image: url("../img/SKILLS.png");
+}
+.skills {
+    text-align: center;
 }
 
 .round {
@@ -105,6 +165,23 @@ body {
 
 .round.fill {
 	background-color: #3d6cb0;
+}
+/*Software block*/
+
+.software .img {
+    display: inline-block;
+    width: 115px;
+    height: 111px;
+    background-image: url("../img/SOFTWARE.png");
+}
+
+.software {
+    display: inline-block;
+}
+
+.subcol {
+    display: inline-block;
+    height: 100px;
 }
 
 .bar {
