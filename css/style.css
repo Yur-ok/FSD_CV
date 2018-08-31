@@ -19,7 +19,12 @@ body {
 	font-size: 24px;
 	line-height: normal;
 	font-weight: 400;
-	color: #000;
+    background-color: black;
+}
+
+ul p {
+    margin: 0;
+    padding: 0;
 }
 
 section > div > h2 {
@@ -30,38 +35,43 @@ section > div > h2 {
 }
 
 .container {
-	height: 100%;
-	background-color: white;
-	display: inline-block;
-	padding: 118px 89px 148px 94px;
-	alignment: center;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 116px 89px 148px 94px;
 }
 
 .coll-1 {
 	width: 40%;
 	float: left;
-    display: block;
-    margin-right: 119px;
+    margin-right: 90px;
 }
+
+.coll-2 {
+    /*display: block;*/
+    /*width: 60%;*/
+}
+
+
 
 /*Bio block*/
 
 .bio {
-	padding: 100px 150px 50px;
+    padding-left: 112px;
 }
 
-.profile_img {
-	width: 200px;
-	height: 200px;
+.bio_img {
+	width: 240px;
+	height: 240px;
 	background: #3d6cb0;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-	box-shadow: 0 0 0 14px #fff,
-				0 0 0 15px #3d6cb0;
+	-moz-border-radius: 120px;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+	box-shadow: 0 0 0 15px #fff,
+				0 0 0 16px #3d6cb0;
 }
 
-.profile_name {
+.bio_name {
 	text-transform: uppercase;
 	font-size: 81px;
 	white-space: nowrap;
@@ -71,17 +81,49 @@ section > div > h2 {
 	/*background: yellow;*/
 }
 
-.profile_surname {
+.bio_surname {
 	text-transform: uppercase;
 	font-size: 96px;
 	font-weight: bold;
 }
 
-.prof {
+.bio_prof {
 	text-transform: uppercase;
 	font-size: 25px;
 	font-weight: bold;
 }
+
+/*Profile block*/
+
+.profile .img {
+    display: inline-block;
+    width: 115px;
+    height: 111px;
+    background-image: url("../img/PROFILE.png");
+    border: solid 2px red;
+}
+
+.header h2 {
+    border: solid 2px;
+    display: inline-block;
+}
+
+.header .line {
+    border: solid green;
+    display: inline-block;
+
+}
+
+.header.section {
+    display: block;
+    background-color: antiquewhite;
+    height: 120px;
+    width: 550px;
+    vertical-align: center;
+    border: transparent 1px solid;
+
+}
+
 
 /*Contact block*/
 
