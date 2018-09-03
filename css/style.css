@@ -1,35 +1,44 @@
 @font-face {
-	font-family: 'MyriadPro-Bold';
-	src: local('☺'), url('../fonts/MyriadPro-Bold.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'MyriadPro-Bold';
+    src: local('☺'), url('../fonts/MyriadPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-	font-family: 'MyriadPro-Regular';
-	src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'MyriadPro-Regular';
+    src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-LightSemiExt';
+    src: local('@'), url("../fonts/MyriadPro-LightSemiExt.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 
     font-family: "MyriadPro-Regular", Arial, sans-serif;
-	font-size: 24px;
-	line-height: normal;
-	font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
     background-color: black;
 }
 
-ul p {
+ul, p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
 
 section > div > h2 {
     font-family: "MyriadPro-Bold", Arial, sans-serif;
-    font-size: 64px;
+    font-size: 42px;
+    text-transform: uppercase;
     line-height: normal;
     color: #3d6cb0;
 }
@@ -37,136 +46,179 @@ section > div > h2 {
 .container {
     width: 1280px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 116px 89px 148px 94px;
+    background-color: #67ff94;
+    padding-top: 105px;
+    padding-bottom: 98px;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .coll-1 {
-	width: 40%;
-	float: left;
-    margin-right: 90px;
+    width: 33.3%;
+    float: left;
+    margin-right: 60px;
+    margin-left: 65px;
 }
 
 .coll-2 {
-    /*display: block;*/
-    /*width: 60%;*/
+    width: auto;
 }
-
-
 
 /*Bio block*/
 
 .bio {
-    padding-left: 112px;
+    margin: 0 auto;
+    text-align: center;
+    height: 485px;
+    padding-left: 15px;
 }
 
 .bio_img {
-	width: 240px;
-	height: 240px;
-	background: #3d6cb0;
-	-moz-border-radius: 120px;
-	-webkit-border-radius: 120px;
-	border-radius: 120px;
-	box-shadow: 0 0 0 15px #fff,
-				0 0 0 16px #3d6cb0;
+    width: 210px;
+    height: 210px;
+    background: #3d6cb0;
+    -moz-border-radius: 105px;
+    -webkit-border-radius: 105px;
+    border-radius: 105px;
+    box-shadow: 0 0 0 15px #fff,
+    0 0 0 16px #3d6cb0;
+    margin: 0 auto;
 }
 
 .bio_name {
-	text-transform: uppercase;
-	font-size: 81px;
-	white-space: nowrap;
-	display: inline-block;
-	text-align: center;
-	/*border: solid 2px red;*/
-	/*background: yellow;*/
+    font-family: 'MyriadPro-LightSemiExt', serif;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    font-size: 58px;
+    letter-spacing: -1px;
+    padding-top: 40px;
 }
 
 .bio_surname {
-	text-transform: uppercase;
-	font-size: 96px;
-	font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.6;
+    letter-spacing: 4.5px;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .bio_prof {
-	text-transform: uppercase;
-	font-size: 25px;
-	font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.8;
+    font-size: 26.5px;
+    font-weight: bold;
+}
+
+
+/*Block's header*/
+
+.head_of_section {
+    height: 75px;
+    display: flex;
+}
+
+.head_of_section .img {
+    /*width: 120px;*/
+    /*height: auto;*/
+    /*background-image: url("../img/PROFILE.png");*/
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.head_of_section h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.head_of_section .line {
+    height: 5px;
+    width: 200px;
+    background-color: #3d6cb0;
+    margin: auto;
 }
 
 /*Profile block*/
 
+.profile {
+height: 381px;
+}
+
 .profile .img {
-    display: inline-block;
-    width: 115px;
-    height: 111px;
+    width: 120px;
+    height: auto;
     background-image: url("../img/PROFILE.png");
-    border: solid 2px red;
 }
 
-.header h2 {
-    border: solid 2px;
-    display: inline-block;
+.profile .line {
+    width: 270px;
 }
 
-.header .line {
-    border: solid green;
-    display: inline-block;
-
+.profile .head_of_section {
+    margin-bottom: 13px;
 }
-
-.header.section {
-    display: block;
-    background-color: antiquewhite;
-    height: 120px;
-    width: 550px;
-    vertical-align: center;
-    border: transparent 1px solid;
-
-}
-
 
 /*Contact block*/
 
-.line {
-    height: 8px;
-    width: 266px;
-    background-color: #3d6cb0;
-    display: inline-block;
+.contact {
+    height: 350px;
 }
 
 .contact .img {
-    display: inline-block;
-    width: 111px;
-    height: 111px;
+    width: 110px;
+    height: auto;
     background-image: url("../img/Phone.png");
 }
 
-.contact {
+.contact .line {
+    width: 210px;
 }
 
+/*Skills block*/
+
+.skills {
+    height: 391px;
+    text-align: center;
+}
+
+.skills .img {
+    width: 80px;
+    height: auto;
+    background-image: url("../img/SKILLS.png");
+}
+
+.skills .head_of_section {
+    margin-bottom: 20px;
+}
+
+.skills h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.round {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.round.fill {
+    background-color: #3d6cb0;
+}
 
 /*Educational block*/
-
-.education .img {
-    display: inline-block;
-    width: 115px;
-    height: 111px;
-    background: url(../img/EDUCATION.png);
-    background-repeat: no-repeat;
-}
 
 .education {
 
 }
 
 /*Experience block*/
-.experience .img {
-    display: inline-block;
-    width: 120px;
-    height: 115px;
-    background-image: url(../img/EXPERIENCE.png);
-    background-repeat: no-repeat;
-}
 
 .experience {
 
@@ -175,47 +227,16 @@ section > div > h2 {
 .bold {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 26px;
 }
 
 .uppercase {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 26px;
 }
 
-/*Skills block*/
-.skills .img {
-    display: inline-block;
-    width: 111px;
-    height: 111px;
-    background-image: url("../img/SKILLS.png");
-}
-.skills {
-    text-align: center;
-}
 
-.round {
-	width: 20px;
-	height: 20px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	background-color: #e6e6e6;
-	display: inline-block;
-	margin-right: 5px;
-}
-
-.round.fill {
-	background-color: #3d6cb0;
-}
 /*Software block*/
-
-.software .img {
-    display: inline-block;
-    width: 115px;
-    height: 111px;
-    background-image: url("../img/SOFTWARE.png");
-}
 
 .software {
     display: inline-block;
@@ -227,43 +248,43 @@ section > div > h2 {
 }
 
 .bar {
-	width: 428px;
-	height: 35px;
-	background-color: #e6e6e6;
+    width: 428px;
+    height: 35px;
+    background-color: #e6e6e6;
 }
 
 .fillbar.Photoshop {
-	width: 390px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 390px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
 
 .fillbar.Illustrator {
-	width: 302px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 302px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
 
 .fillbar.Indesign {
-	width: 240.88px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 240.88px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
 
 .fillbar.Dreamwaver {
-	width: 355.60px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 355.60px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
 
 .fillbar.Effects {
-	width: 263.81px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 263.81px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
 
 .fillbar.Html {
-	width: 390px;
-	height: 35px;
-	background-color: #3d6cb0;
+    width: 390px;
+    height: 35px;
+    background-color: #3d6cb0;
 }
