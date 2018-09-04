@@ -56,10 +56,10 @@ section > div > h2 {
 }
 
 .coll-1 {
-    width: 33.2%;
+    width: 34.5%;
     float: left;
     margin-right: 60px;
-    margin-left: 66px;
+    margin-left: 63px;
 }
 
 .coll-2 {
@@ -71,8 +71,8 @@ section > div > h2 {
 .bio {
     margin: 0 auto;
     text-align: center;
-    height: 480px;
-    padding-left: 15px;
+    height: 485px;
+    /*padding-left: 15px;*/
 }
 
 .bio_img {
@@ -90,9 +90,9 @@ section > div > h2 {
 .bio_name {
     font-family: 'MyriadPro-LightSemiExt', serif;
     text-transform: uppercase;
-    word-spacing: 5px;
+    /*word-spacing: 5px;*/
     font-size: 58px;
-    letter-spacing: -2px;
+    /*letter-spacing: -2px;*/
     padding-top: 40px;
 }
 
@@ -114,7 +114,7 @@ section > div > h2 {
 /*Block's header*/
 
 .head_of_section {
-    height: 75px;
+    height: 70px;
     display: flex;
 }
 
@@ -132,7 +132,7 @@ section > div > h2 {
 
 .head_of_section .line {
     height: 5px;
-    width: 200px;
+    width: auto;
     background-color: #3d6cb0;
     margin: auto;
 }
@@ -141,15 +141,16 @@ section > div > h2 {
 
 .profile {
     height: 380px;
+    width: 425px;
     margin-bottom: 3px;
 }
 
 .profile .img {
     width: 90px;
-    height: 81px;
+    height: 73px;
     background-image: url("../img/PROFILE.png");
     background-repeat: no-repeat;
-    padding-right: 13px;
+    padding-right: 28px;
 }
 
 .profile h2 {
@@ -176,9 +177,17 @@ section > div > h2 {
 
 .contact .img {
     width: 80px;
-    height: auto;
+    height: 73px;
     background-image: url("../img/Phone.png");
-    padding-right: 20px;
+    padding-right: 17px;
+}
+
+.contact h2 {
+    margin: auto 0;
+}
+
+.contact .line {
+    width: 200px;
 }
 
 /*Skills block*/
