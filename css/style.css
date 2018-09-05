@@ -27,7 +27,7 @@ body {
     font-size: 16px;
     line-height: normal;
     font-weight: 400;
-    color: blueviolet;
+    color: #3d6cb0;
     background-color: black;
 }
 
@@ -36,43 +36,45 @@ ul, p, h1, h2, h3, h4 {
     padding: 0;
 }
 
-section > div > h2 {
+section > ul .header {
     font-family: "MyriadPro-Bold", Arial, sans-serif;
     font-size: 42px;
     text-transform: uppercase;
     line-height: normal;
-    /*color: #3d6cb0;*/
-    color: red;
+    color: #3d6cb0;
 }
 
 .container {
     width: 1280px;
+    min-height: 1811px;
     margin: 0 auto;
-    background-color: #67ff94;
-    padding-top: 103px;
+    background-color: #ffffff;
+    padding-top: 76px;
     padding-bottom: 98px;
     padding-left: auto;
     padding-right: auto;
 }
 
 .coll-1 {
-    width: 34.5%;
+    width: 34.7%;
     float: left;
-    margin-right: 60px;
-    margin-left: 63px;
+    margin-right: 61px;
+    margin-left: 62px;
+    border: 1px solid transparent;
 }
 
 .coll-2 {
-    width: auto;
+    float: right;
 }
 
 /*Bio block*/
 
 .bio {
+    /*padding-top: 12x;*/
+    /*padding-left: 2px;*/
     margin: 0 auto;
     text-align: center;
-    height: 485px;
-    /*padding-left: 15px;*/
+    height: 486px;
 }
 
 .bio_img {
@@ -84,110 +86,135 @@ section > div > h2 {
     border-radius: 105px;
     box-shadow: 0 0 0 15px #fff,
     0 0 0 16px #3d6cb0;
-    margin: 0 auto;
+    margin: 28px auto 0;
 }
 
 .bio_name {
-    font-family: 'MyriadPro-LightSemiExt', serif;
+    font-family: 'MyriadPro-LightSemiExt', Arial, sans-serif;
     text-transform: uppercase;
-    /*word-spacing: 5px;*/
     font-size: 58px;
-    /*letter-spacing: -2px;*/
     padding-top: 40px;
 }
 
 .bio_surname {
     text-transform: uppercase;
-    line-height: 0.7;
-    letter-spacing: 4.5px;
+    line-height: 0.65;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .bio_prof {
     text-transform: uppercase;
-    line-height: 2.4;
+    line-height: 2.6;
     font-size: 26.5px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /*Block's header*/
 
-.head_of_section {
-    height: 70px;
+.header {
+    list-style-type: none;
     display: flex;
 }
 
-.head_of_section .img {
+.header .img {
     background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
+    background-size: 100%;
+    margin: auto 0;
 }
 
-.head_of_section h2 {
-    font-size: 42px;
+.header .h2 {
+    font-family: "MyriadPro-Bold", Arial, sans-serif;
+    font-size: 43px;
     text-transform: uppercase;
-    margin: auto;
+    margin: auto 0;
 }
 
-.head_of_section .line {
+.header .line {
     height: 5px;
-    width: auto;
     background-color: #3d6cb0;
-    margin: auto;
+    margin: auto 0;
 }
 
 /*Profile block*/
 
 .profile {
-    height: 380px;
-    width: 425px;
-    margin-bottom: 3px;
+    height: 382px;
 }
 
 .profile .img {
-    width: 90px;
-    height: 73px;
     background-image: url("../img/PROFILE.png");
-    background-repeat: no-repeat;
-    padding-right: 28px;
+    width: 77px;
+    height: 74px;
 }
 
-.profile h2 {
-    padding-right: 10px;
+.profile .h2 {
+    margin: auto 0;
+    padding-left: 9px;
+    padding-right: 5px;
 }
 
 .profile .line {
-    width: 260px;
-}
-
-.profile .head_of_section {
-    margin-bottom: 13px;
+    width: 174px;
+    margin-top: 33px;
 }
 
 .profile p {
-    font-stretch: extra-expanded;
+    margin-top: 12px;
+    margin-right: 14px;
+}
+
+.profile span {
+    font-family: 'Myriad-Pro', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*Contact block*/
 
 .contact {
-    height: 350px;
+    height: 348px;
 }
 
 .contact .img {
-    width: 80px;
-    height: 73px;
     background-image: url("../img/Phone.png");
-    padding-right: 17px;
+    width: 74px;
+    height: 75px;
 }
 
-.contact h2 {
-    margin: auto 0;
+.contact .h2 {
+    padding-left: 12px;
+    padding-right: 5px;
 }
 
 .contact .line {
-    width: 200px;
+    width: 153px;
+    margin-top: 33px;
+}
+
+.contact .header {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding-bottom: 28px;
+
+}
+
+td.first {
+    width: 30%;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+td.second {
+    font-size: 21px;
 }
 
 /*Skills block*/
@@ -195,32 +222,46 @@ section > div > h2 {
 .skills {
     height: 390px;
     text-align: center;
+    margin-right: 14px;
+}
+
+.skills .header {
+    margin-bottom: 24px;
 }
 
 .skills .img {
-    width: 80px;
-    height: auto;
     background-image: url("../img/SKILLS.png");
+    width: 75px;
+    height: 75px;
+    margin: auto 0;
 }
 
-.skills .head_of_section {
-    margin-bottom: 20px;
+.skills .h2 {
+    padding-left: 8px;
+    padding-right: 13px;
+}
+
+.skills .line {
+    width: 199px;
+    margin: auto 0;
 }
 
 .skills h3 {
     text-transform: uppercase;
     font-size: 26px;
+    padding-bottom: 8px;
 }
 
 .round {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #e6e6e6;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 7px;
+    margin-bottom: 16px;
 }
 
 .round.fill {
@@ -230,6 +271,21 @@ section > div > h2 {
 /*Educational block*/
 
 .education {
+    height: 705px;
+}
+
+.education .img {
+    background-image: url("../img/EDUCATION.png");
+    width: 77px;
+    height: 74px;
+}
+
+.education .h2 {
+    padding-left: 18px;
+}
+
+.education .line {
+    width: 100px;
 
 }
 
