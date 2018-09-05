@@ -58,13 +58,14 @@ section > ul .header {
 .coll-1 {
     width: 34.7%;
     float: left;
-    margin-right: 61px;
     margin-left: 62px;
     border: 1px solid transparent;
 }
 
 .coll-2 {
     float: right;
+    width: 55%;
+    margin-right: 8px;
 }
 
 /*Bio block*/
@@ -272,6 +273,10 @@ td.second {
 
 .education {
     height: 705px;
+}
+
+.education .header {
+    padding-top: 2px;
 }
 
 .education .img {
