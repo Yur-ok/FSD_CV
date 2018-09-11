@@ -21,101 +21,116 @@
 
 body {
     margin: 0;
-    padding: 0;
 
     font-family: "MyriadPro-Regular", Arial, sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 400;
     color: #3d6cb0;
-    background-color: black;
+    background-color: grey;
 }
 
 ul, p, h1, h2, h3, h4 {
-    margin: 0;
-    padding: 0;
-}
-
-section > ul .header {
-    font-family: "MyriadPro-Bold", Arial, sans-serif;
-    font-size: 42px;
-    text-transform: uppercase;
-    line-height: normal;
-    color: #3d6cb0;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .container {
+    margin: auto;
+    display: flex;
     width: 1280px;
-    min-height: 1811px;
-    margin: 0 auto;
     background-color: #ffffff;
-    padding-top: 76px;
-    padding-bottom: 98px;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 .coll-1 {
-    width: 34.7%;
-    float: left;
-    margin-left: 62px;
-    border: 1px solid transparent;
+    /*border: 1px solid green;*/
+    margin-left: 63px;
+    width: 428px;
 }
 
 .coll-2 {
-    float: right;
-    width: 55%;
-    margin-right: 8px;
+    /*border: 1px solid coral;*/
+    margin-left: 79px;
+    width: 650px;
 }
 
 /*Bio block*/
 
 .bio {
-    /*padding-top: 12x;*/
-    /*padding-left: 2px;*/
+    /*border: 1px solid coral;*/
     margin: 0 auto;
     text-align: center;
-    height: 486px;
 }
 
 .bio_img {
-    width: 208px;
-    height: 208px;
+    width: 209px;
+    height: 209px;
     background: #3d6cb0;
-    -moz-border-radius: 105px;
-    -webkit-border-radius: 105px;
-    border-radius: 105px;
-    box-shadow: 0 0 0 15px #fff,
-    0 0 0 16px #3d6cb0;
-    margin: 28px auto 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 14px #fff,
+    0 0 0 15px #3d6cb0;
+    margin-top: 107px;
+    margin-left: 118px;
+}
+
+.fullname {
+    position: relative;
+    left: -8px;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 30px;
 }
 
 .bio_name {
+    margin-top: 52px;
     font-family: 'MyriadPro-LightSemiExt', Arial, sans-serif;
+    font-size: 37.5px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
     text-transform: uppercase;
-    font-size: 58px;
-    padding-top: 40px;
+    -moz-transform: matrix( 1.46297581663061,0,0,1.43842501051826,0,0);
+    -webkit-transform: matrix( 1.46297581663061,0,0,1.43842501051826,0,0);
+    -ms-transform: matrix( 1.46297581663061,0,0,1.43842501051826,0,0);
 }
 
 .bio_surname {
+    margin-top: 17px;
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
     text-transform: uppercase;
-    line-height: 0.65;
-    font-size: 60px;
-    font-weight: 900;
+    -moz-transform: matrix(2.54907197031167, 0, 0, 2.54930879922867, 0, 0);
+    -webkit-transform: matrix(2.54907197031167, 0, 0, 2.54930879922867, 0, 0);
+    -ms-transform: matrix(2.54907197031167, 0, 0, 2.54930879922867, 0, 0);
 }
 
 .bio_prof {
+    margin-top: 34px;
+    font-size: 8.333px;
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
     text-transform: uppercase;
-    line-height: 2.6;
-    font-size: 26.5px;
-    font-weight: bolder;
+    -moz-transform: matrix( 2.97387570243341,0,0,3.09574086498728,0,0);
+    -webkit-transform: matrix( 2.97387570243341,0,0,3.09574086498728,0,0);
+    -ms-transform: matrix( 2.97387570243341,0,0,3.09574086498728,0,0);
 }
 
 /*Block's header*/
 
 .header {
+    font-family: "MyriadPro-Bold", Arial, sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #3d6cb0;
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .header .img {
@@ -140,7 +155,9 @@ section > ul .header {
 /*Profile block*/
 
 .profile {
-    height: 382px;
+    /*border: 1px solid red;*/
+    margin-top: 89px;
+
 }
 
 .profile .img {
@@ -150,22 +167,21 @@ section > ul .header {
 }
 
 .profile .h2 {
-    margin: auto 0;
     padding-left: 9px;
-    padding-right: 5px;
+    margin-top: 10px;
+    padding-right: 6px;
 }
 
 .profile .line {
-    width: 174px;
+    width: 173px;
     margin-top: 33px;
 }
 
 .profile p {
     margin-top: 12px;
-    margin-right: 14px;
 }
 
-.profile span {
+.profile > p > span {
     font-family: 'Myriad-Pro', Arial, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -174,7 +190,7 @@ section > ul .header {
 /*Contact block*/
 
 .contact {
-    height: 348px;
+    margin-top: 49px;
 }
 
 .contact .img {
@@ -184,8 +200,9 @@ section > ul .header {
 }
 
 .contact .h2 {
-    padding-left: 12px;
-    padding-right: 5px;
+    padding-left: 11px;
+    padding-right: 6px;
+    margin-top: 11px;
 }
 
 .contact .line {
@@ -221,7 +238,7 @@ td.second {
 /*Skills block*/
 
 .skills {
-    height: 390px;
+    /*height: 390px;*/
     text-align: center;
     margin-right: 14px;
 }
@@ -232,19 +249,20 @@ td.second {
 
 .skills .img {
     background-image: url("../img/SKILLS.png");
-    width: 75px;
+    width: 74px;
     height: 75px;
-    margin: auto 0;
+    margin-top: 2px;
 }
 
 .skills .h2 {
-    padding-left: 8px;
+    padding-left: 9px;
     padding-right: 13px;
+    margin-top: 11px;
 }
 
 .skills .line {
     width: 199px;
-    margin: auto 0;
+    margin-top: 35px;
 }
 
 .skills h3 {
@@ -272,26 +290,53 @@ td.second {
 /*Educational block*/
 
 .education {
-    height: 705px;
+    /*height: 705px;*/
 }
 
 .education .header {
-    padding-top: 2px;
+    margin-top: 80px;
+    /*padding-top: 4px;*/
+    margin-bottom: 33px;
 }
 
 .education .img {
     background-image: url("../img/EDUCATION.png");
     width: 77px;
     height: 74px;
+    /*margin: 3px 0 0 0;*/
 }
 
 .education .h2 {
     padding-left: 18px;
+    margin-top: 9px;
+    padding-right: 7px;
 }
 
 .education .line {
-    width: 100px;
+    width: 321px;
+    margin-top: 32px;
+}
 
+.education .center {
+    /*margin-top: 25px;*/
+    /*margin-left: 13px;*/
+}
+
+.education .trow {
+    display: flex;
+    border: 1px solid red;
+    margin-bottom: 19px;
+}
+
+.education .cycle {
+    width: 22px;
+    height: 22px;
+    border-radius: 12px;
+    background-color: #000;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 6px;
+    margin-right: 20px;
 }
 
 /*Experience block*/
@@ -301,12 +346,14 @@ td.second {
 }
 
 .bold {
+    font-family: "MyriadPro-Bold", Arial, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 27px;
 }
 
 .uppercase {
+    font-family: "MyriadPro-Regular", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 26px;
 }
@@ -314,17 +361,17 @@ td.second {
 /*Software block*/
 
 .software {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .subcol {
     display: inline-block;
-    height: 100px;
+    /*height: 100px;*/
 }
 
 .bar {
     width: 428px;
-    height: 35px;
+    /*height: 35px;*/
     background-color: #e6e6e6;
 }
 
@@ -363,3 +410,7 @@ td.second {
     height: 35px;
     background-color: #3d6cb0;
 }
+
+/*.clearfix {*/
+/*clear: both;*/
+/*}*/
