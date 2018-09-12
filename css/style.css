@@ -68,7 +68,7 @@ ul, p, h1, h2, h3, h4 {
     border-radius: 50%;
     box-shadow: 0 0 0 14px #fff,
     0 0 0 15px #3d6cb0;
-    margin-top: 106px;
+    margin-top: 109px;
     margin-left: 118px;
 }
 
@@ -299,7 +299,7 @@ td.second {
 /*Educational block*/
 
 .education {
-    margin-top: 79px;
+    margin-top: 82px;
 }
 
 .education .img {
@@ -332,17 +332,17 @@ border-radius: 50%;
 background-color: #000000;
 }
 
-.list-item {
+.education-item {
     margin-top: 25px;
     margin-left: 56px;
     position: relative;;
 }
 
-.second_row {
+.education-item .second_row {
     margin-top: 2px;
 }
 
-.third_row {
+.education-item .third_row {
     margin-top: 8px;
 }
 
@@ -379,14 +379,46 @@ background-color: #000000;
     width: 321px;
 }
 
+.experience-item {
+    margin-top: 42px;
+    margin-left: 54px;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+
+    position: absolute;
+    top: 7px;
+    left: -41px;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.experience-item .second_row {
+    margin-top: 3px;
+}
+
+.experience-item .third_row {
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.experience-item.item-2 {
+    margin-top: 10px;
+}
+
+.experience-item.item-3 {
+    margin-top: 11px;
+}
 .bold {
     font-family: "MyriadPro-Bold", Arial, sans-serif;
     font-size: 27px;
     line-height: 1.2;
     text-transform: uppercase;
-    /*-moz-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
-    /*-webkit-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
-    /*-ms-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
 }
 
 .uppercase {
