@@ -26,7 +26,6 @@ body {
     font-size: 16px;
     line-height: normal;
     font-weight: 400;
-    color: #3d6cb0;
     background-color: grey;
 }
 
@@ -58,12 +57,12 @@ body {
 .bio_img {
     width: 209px;
     height: 209px;
-    background: #3d6cb0;
+    background: #006cb4;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     box-shadow: 0 0 0 14px #fff,
-    0 0 0 15px #3d6cb0;
+    0 0 0 15px #006cb4;
     margin-top: 109px;
     margin-left: 118px;
 }
@@ -119,7 +118,7 @@ body {
     font-size: 42px;
     text-transform: uppercase;
     line-height: normal;
-    color: #3d6cb0;
+    color: #006cb4;
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -141,7 +140,7 @@ body {
 
 .header .line {
     height: 5px;
-    background-color: #3d6cb0;
+    background-color: #006cb4;
     margin: auto 0;
 }
 
@@ -220,6 +219,7 @@ td.first {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #006cb4;
 }
 
 td.second {
@@ -287,7 +287,7 @@ td.second {
 }
 
 .round.fill {
-    background-color: #3d6cb0;
+    background-color: #006cb4;
 }
 
 /*Educational block*/
@@ -415,6 +415,10 @@ td.second {
     text-transform: uppercase;
 }
 
+.bold.color {
+    color: #006cb4;
+}
+
 .uppercase {
     font-family: "MyriadPro-Regular", Arial, sans-serif;
     text-transform: uppercase;
@@ -423,7 +427,6 @@ td.second {
 
 .just_upper {
     font-size: 27px;
-    color: #3d6cb0;
 }
 
 /*Software block*/
@@ -477,7 +480,7 @@ td.second {
 
 .fillbar {
     height: 23px;
-    background-color: #3d6cb0;
+    background-color: #006cb4;
 }
 
 .fillbar.Photoshop {
