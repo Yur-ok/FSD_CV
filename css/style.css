@@ -319,7 +319,7 @@ td.second {
     margin-top: 32px;
 }
 
-.list-item::before {
+.education-item::before {
 content: '';
 
 position: absolute;
