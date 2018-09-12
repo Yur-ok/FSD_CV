@@ -43,21 +43,18 @@ ul, p, h1, h2, h3, h4 {
 }
 
 .coll-1 {
-    /*border: 1px solid green;*/
     margin-left: 63px;
     width: 428px;
 }
 
 .coll-2 {
-    /*border: 1px solid coral;*/
-    margin-left: 79px;
-    width: 650px;
+    margin-left: 77px;
+    width: 653px;
 }
 
 /*Bio block*/
 
 .bio {
-    /*border: 1px solid coral;*/
     margin: 0 auto;
     text-align: center;
 }
@@ -71,7 +68,7 @@ ul, p, h1, h2, h3, h4 {
     border-radius: 50%;
     box-shadow: 0 0 0 14px #fff,
     0 0 0 15px #3d6cb0;
-    margin-top: 107px;
+    margin-top: 106px;
     margin-left: 118px;
 }
 
@@ -221,7 +218,6 @@ table {
 
 td {
     padding-bottom: 28px;
-
 }
 
 td.first {
@@ -303,20 +299,13 @@ td.second {
 /*Educational block*/
 
 .education {
-    /*height: 705px;*/
-}
-
-.education .header {
-    margin-top: 80px;
-    /*padding-top: 4px;*/
-    margin-bottom: 33px;
+    margin-top: 79px;
 }
 
 .education .img {
     background-image: url("../img/EDUCATION.png");
     width: 77px;
     height: 74px;
-    /*margin: 3px 0 0 0;*/
 }
 
 .education .h2 {
@@ -330,39 +319,74 @@ td.second {
     margin-top: 32px;
 }
 
-.education .center {
-    /*margin-top: 25px;*/
-    /*margin-left: 13px;*/
+.list-item::before {
+content: '';
+
+position: absolute;
+top: 7px;
+left: -43px;
+
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #000000;
 }
 
-.education .trow {
-    display: flex;
-    border: 1px solid red;
-    margin-bottom: 19px;
+.list-item {
+    margin-top: 25px;
+    margin-left: 56px;
+    position: relative;;
 }
 
-.education .cycle {
-    width: 22px;
-    height: 22px;
-    border-radius: 12px;
-    background-color: #000;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 6px;
-    margin-right: 20px;
+.second_row {
+    margin-top: 2px;
+}
+
+.third_row {
+    margin-top: 8px;
+}
+
+.item-2 {
+    margin-top: 11px;
+}
+
+.item-3 {
+    margin-top: 8px;
+}
+
+.item-4 {
+    margin-top: 9px;
 }
 
 /*Experience block*/
 
 .experience {
+    margin-top: 50px;
+}
 
+.experience .img {
+    background-image: url('../img/EXPERIENCE.png');
+    width: 79px;
+    height: 76px;
+}
+
+.experience .h2 {
+    padding-left: 16px;
+    /*padding-right: 10px;*/
+}
+
+.experience .line {
+    width: 321px;
 }
 
 .bold {
     font-family: "MyriadPro-Bold", Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 27px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    /*-moz-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
+    /*-webkit-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
+    /*-ms-transform: matrix( 2.54907197031167,0,0,2.54930879922867,0,0);*/
 }
 
 .uppercase {
@@ -371,10 +395,15 @@ td.second {
     font-size: 26px;
 }
 
+.just_upper {
+    font-size: 27px;
+    color: #3d6cb0;
+}
+
 /*Software block*/
 
 .software {
-    /*display: inline-block;*/
+    margin-top: 10px;
 }
 
 .subcol {
