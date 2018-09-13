@@ -329,7 +329,11 @@ td.second {
 .education-item {
     margin-top: 25px;
     margin-left: 56px;
-    position: relative;;
+    position: relative;
+}
+
+.education-item.item-1 {
+    padding-bottom: 1px;
 }
 
 .education-item .second_row {
@@ -342,10 +346,14 @@ td.second {
 
 .item-2 {
     margin-top: 11px;
+    padding-bottom: 1px;
+
 }
 
 .item-3 {
     margin-top: 8px;
+    padding-bottom: 1px;
+
 }
 
 .item-4 {
@@ -355,7 +363,7 @@ td.second {
 /*Experience block*/
 
 .experience {
-    margin-top: 50px;
+    margin-top: 51px;
 }
 
 .experience .img {
@@ -401,7 +409,7 @@ td.second {
 }
 
 .experience-item.item-2 {
-    margin-top: 10px;
+    margin-top: 11px;
 }
 
 .experience-item.item-3 {
