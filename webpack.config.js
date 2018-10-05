@@ -7,7 +7,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 //
 const WebpackMd5Hash = require('webpack-md5-hash');
-
+//
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -32,7 +33,7 @@ module.exports = {
             {
                 test: /\.styl$/,
                 exclude: /(node_modules|.git)/,
-                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'stylus-loader'],
+                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'stylus-loader']
             },
             {
                 test: /\.(eot|woff|woff2|ttf|svg|png|jpeg)$/,
@@ -52,6 +53,12 @@ module.exports = {
             }
         ]
     },
+    // devServer: {
+    //     contentBase: path.join(__dirname, 'dist'),
+    //     compress: true,
+    //     open: true,
+    //     hot: true
+    // },
 
     plugins: [
         new CleanWebpackPlugin('dist', {}),
@@ -64,6 +71,8 @@ module.exports = {
             template: './source/index.pug',
             filename: 'index.html'
         }),
-        new WebpackMd5Hash()
+        // new WebpackMd5Hash(),
+        // new webpack.HotModuleReplacementPlugin(),
+        // new webpack.NamedModulesPlugin(),
     ]
 };
