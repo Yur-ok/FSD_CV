@@ -1,23 +1,64 @@
-body
-  max-width: 1280px
-  margin: 0 auto
-  padding-top: 78px;
+@font-face
+  font-family: 'MyriadPro-Bold';
+  src: url('./fonts/MyriadPro-Bold.woff') format('woff');
+@font-face
+  font-family: 'MyriadPro-Regular';
+  src: url('./fonts/MyriadPro-Regular.woff') format('woff');
+@font-face
+  font-family: 'MyriadPro-LightSemiExt';
+  src: url('./fonts/MyriadPro-LightSemiExt.woff') format('woff');
 
+
+
+body
+  margin: 0 auto
+  max-width: 1280px
+  padding-top: 78px;
+  //
   // Common rules
+  //
+  p
+    margin: 0
+
   ul
     list-style-type: none
+    margin: 0
+    padding: 0
 
+  .block-header__items
+    display: flex
+    align-items: center
+
+  .block-header__img
+    background-size: 100%
+    background-repeat: no-repeat
+
+  .block-header__title
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    text-transform: uppercase
+    font-size: 29px
+    letter-spacing: -1px
+
+  .block-header__title > h2
+    margin: 0
+
+  .block-header__line
+    background-color: #006cb4
+    height: 5px
+
+  //
   //first block BIO
+  //
   .bio
-    border: 1px solid red
+    //border: 1px solid red
     display: flex
     flex-direction column
     justify-content: center
     max-width: 42%
 
   .big-photo
-    margin-left: 180px
-    margin-top: 27px
+    margin-left: 181px
+    margin-top: 28px
     width: 209px
     height: 209px
     border-radius 50%
@@ -30,36 +71,129 @@ body
     margin: 0
 
   .full-name__list
-    margin-top: 36px
-    margin-left: 95px;
+    margin-top: 40px
+    margin-left: 137px;
     margin-right: 105px;
     text-align: center;
-    border: 1px solid red
     list-style-type: none
 
   .full-name__name
-    border: 1px solid red
-
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 37px
+    letter-spacing: 0.5px
+    text-transform: uppercase
 
   .full-name__surname
-    border: 1px solid red
-
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    font-size: 43px
+    text-transform: uppercase;
+    line-height: 44px
+    letter-spacing: -1px
 
   .full-name__position
-    border: 1px solid red
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    text-transform: uppercase
+    line-height: 62px
+    font-size: 18px
+    letter-spacing: -1.4px
 
-
+  //
   //second block Profile
+  //
+  .profile
+    max-width: 35%
+    margin-left: 63px
+    margin-top: 63px
+
+  .profile .block-header__img
+    background-image: url("../img/PROFILE.png")
+    width: 77px
+    height: 74px
+    margin-right: 9px;
+
+  .profile .block-header__title
+    margin-right: 9px
+
+  .profile .block-header__line
+    //border-bottom: 3px transparent solid
+    width: 173px
+
+  .profile__description
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    margin-top: 12px
+    width: 421px
+    line-height: 1.2
+    letter-spacing: 1.3px
 
   .profile__description--bold
     font-weight: bold;
 
-    //third block Contact
 
-    //fourth block Skills
+  //
+  //third block Contact
+  //
+  .contact
+    margin-top: 49px
+    margin-left: 63px
 
-    //fifth block Education
+  .contact .block-header__img
+    background-image: url('../img/Phone.png')
+    width: 74px
+    height: 74px
+    margin-right: 12px
 
+  .contact .block-header__title
+    margin-right: 7px
+
+  .contact .block-header__line
+    width: 153px
+
+  .contact__table
+    border-collapse: collapse
+    margin-top: 19px
+    margin-left: -1.1px;
+    text-align: left
+    vertical-align: top
+
+  th
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    font-size: 22px
+    color: #006cb4
+    text-transform: uppercase
+    width: 131px
+    letter-spacing: -0.5px
+
+  td
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 22px
+    letter-spacing: -0.4px
+
+  tr
+    height: 56px
+
+  //
+  //fourth block Skills
+  //
+  .skills
+    margin-top: 33px
+    margin-left: 63px
+
+  .skills .block-header__img
+    background-image: url('../img/SKILLS.png')
+    height: 74px;
+    width: 74px;
+    margin-right: 10px
+
+  .skills .block-header__title
+    margin-right: 15px
+
+
+  .skills .block-header__line
+    width: 199px
+
+  //
+  //fifth block Education
+  //
   .education__item-header--bold
     font-weight: bold;
 
