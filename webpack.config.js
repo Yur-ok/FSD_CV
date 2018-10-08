@@ -10,6 +10,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 //
 const webpack = require('webpack');
 
+
 module.exports = {
     entry: {
         main: './source/index.js'
@@ -36,19 +37,21 @@ module.exports = {
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'stylus-loader']
             },
             {
-                test: /\.(eot|woff|woff2|ttf|svg|png|jpeg)$/,
+                test: /\.(eot|woff|woff2|ttf)$/,
                 exclude: /(node_modules|.git)/,
                 loader: 'file-loader',
                 options: {
-                    name: "./fonts/[name].[ext]"
+                    name: "./fonts/[name].[ext]",
+                    // outputPath: 'fonts/'
                 }
             },
             {
-                test: /\.png$/,
+                test: /\.(png|svg|jpe?g|gif)$/,
                 exclude: /(node_modules|.git)/,
                 loader: 'file-loader',
                 options: {
-                    name: "./img/[name].[ext]"
+                    name: "./img/[name].[ext]",
+                    // outputPath: 'images/'
                 }
             }
         ]
