@@ -1,14 +1,14 @@
 @font-face
   font-family: 'MyriadPro-Bold';
   src: url('./fonts/MyriadPro-Bold.woff') format('woff');
+
 @font-face
   font-family: 'MyriadPro-Regular';
   src: url('./fonts/MyriadPro-Regular.woff') format('woff');
+
 @font-face
   font-family: 'MyriadPro-LightSemiExt';
   src: url('./fonts/MyriadPro-LightSemiExt.woff') format('woff');
-
-
 
 body
   margin: 0 auto
@@ -50,32 +50,32 @@ body
   //first block BIO
   //
   .bio
-    //border: 1px solid red
+    margin-left: 63px
     display: flex
+    max-width: 36%
     flex-direction column
-    justify-content: center
-    max-width: 42%
+    align-items: center
+    background-color: greenyellow
 
   .big-photo
-    margin-left: 181px
+    margin-left: 17px
     margin-top: 28px
     width: 209px
     height: 209px
     border-radius 50%
     background-color: #006cb4
     box-shadow: 0 0 0 14px #fff,
-    0 0 0 16px #006cb4
-
+            0 0 0 16px #006cb4
 
   .full-name__list > li > h2
     margin: 0
 
   .full-name__list
-    margin-top: 40px
-    margin-left: 137px;
-    margin-right: 105px;
+    margin-top: 41px
+    margin-left: 14px;
     text-align: center;
     list-style-type: none
+    white-space: nowrap
 
   .full-name__name
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
@@ -101,9 +101,10 @@ body
   //second block Profile
   //
   .profile
-    max-width: 35%
+    background-color: greenyellow
+    max-width: 36%
     margin-left: 63px
-    margin-top: 63px
+    margin-top: 62px
 
   .profile .block-header__img
     background-image: url("../img/PROFILE.png")
@@ -120,21 +121,21 @@ body
 
   .profile__description
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    margin-top: 12px
-    width: 421px
+    margin-top: 13px
+    width: 425px
     line-height: 1.2
-    letter-spacing: 1.3px
 
   .profile__description--bold
     font-weight: bold;
-
 
   //
   //third block Contact
   //
   .contact
-    margin-top: 49px
+    max-width: 36%
+    margin-top: 53px
     margin-left: 63px
+    background-color: greenyellow
 
   .contact .block-header__img
     background-image: url('../img/Phone.png')
@@ -150,7 +151,7 @@ body
 
   .contact__table
     border-collapse: collapse
-    margin-top: 19px
+    margin-top: 18px
     margin-left: -1.1px;
     text-align: left
     vertical-align: top
@@ -177,6 +178,8 @@ body
   .skills
     margin-top: 33px
     margin-left: 63px
+    max-width: 36%
+    background-color: greenyellow
 
   .skills .block-header__img
     background-image: url('../img/SKILLS.png')
@@ -187,9 +190,46 @@ body
   .skills .block-header__title
     margin-right: 15px
 
-
   .skills .block-header__line
     width: 199px
+
+  .skill__header > h3
+    margin-top: 0
+    margin-bottom: 8px
+
+  .skills__list
+    display: flex
+    flex-direction: column
+    margin-top: 22px
+    height: 286px
+    justify-content: space-between
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 23px
+    text-transform: uppercase
+    padding-bottom: 106px
+
+  .skills__description
+    height: 51px
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+
+  .skill__level-point
+    display: flex
+
+  .empty-point
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background-color: #e7e7e7
+    margin-right: 10px
+
+  .fill-point
+    background-color: #006cb4
+
 
   //
   //fifth block Education
