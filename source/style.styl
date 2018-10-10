@@ -12,9 +12,19 @@
 
 body
   margin: 0 auto
-  max-width: 1280px
-  padding-top: 78px;
-  //
+  padding-top: 78px
+  margin-left: 63px
+  margin-right: 59px
+
+  main
+    max-height: 1811px
+    max-width: 1280px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    //justify-content: space-between
+
+
   // Common rules
   //
   p
@@ -50,9 +60,9 @@ body
   //first block BIO
   //
   .bio
-    margin-left: 63px
     display: flex
-    max-width: 36%
+    //max-width: 38%
+    width: 425px
     flex-direction column
     align-items: center
     background-color: greenyellow
@@ -64,8 +74,7 @@ body
     height: 209px
     border-radius 50%
     background-color: #006cb4
-    box-shadow: 0 0 0 14px #fff,
-            0 0 0 16px #006cb4
+    box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4
 
   .full-name__list > li > h2
     margin: 0
@@ -102,8 +111,8 @@ body
   //
   .profile
     background-color: greenyellow
-    max-width: 36%
-    margin-left: 63px
+    //max-width: 38%
+    width: 425px
     margin-top: 62px
 
   .profile .block-header__img
@@ -116,7 +125,6 @@ body
     margin-right: 9px
 
   .profile .block-header__line
-    //border-bottom: 3px transparent solid
     width: 173px
 
   .profile__description
@@ -132,9 +140,9 @@ body
   //third block Contact
   //
   .contact
-    max-width: 36%
+    //max-width: 38%
+    width: 425px
     margin-top: 53px
-    margin-left: 63px
     background-color: greenyellow
 
   .contact .block-header__img
@@ -177,8 +185,8 @@ body
   //
   .skills
     margin-top: 33px
-    margin-left: 63px
-    max-width: 36%
+    //max-width: 38%
+    width: 425px
     background-color: greenyellow
 
   .skills .block-header__img
@@ -203,7 +211,6 @@ body
     margin-top: 22px
     height: 286px
     justify-content: space-between
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 23px
     text-transform: uppercase
     padding-bottom: 106px
@@ -234,8 +241,184 @@ body
   //
   //fifth block Education
   //
+  .education
+    background-color: greenyellow
+    //max-width: 56%
+    width: 652px
+    margin-left: 80px
+
+  .education .block-header__img
+    background-image: url('../img/EDUCATION.png')
+    width: 77px
+    height: 74px
+    margin-right: 20px
+
+  .education .block-header__title
+    margin-right: 10px
+
+  .education .block-header__line
+    width: 321px
+
+  .education__item::before
+    content: ''
+
+    position: absolute
+    left: 12px
+    top: 7px
+
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #000
+
+
+  .education__list
+    margin-top: 26px
+    padding-left: 54px
+    position: relative
+
+  .education__item
+    margin-bottom: 11px
+
+  .education__item:nth-child(2)
+    margin-bottom: 9px
+
+  .education__item:nth-child(3)
+    margin-bottom: 8px
+
   .education__item-header--bold
-    font-weight: bold;
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    font-size: 30px
+    letter-spacing: -2.3px
+    text-transform: uppercase
+
+  .education__item--addText
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 30px
+    letter-spacing: -1.3px
 
   .education__item--upper
-    text-transform: none;
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    text-transform: uppercase
+    font-size: 27px
+    letter-spacing: -0.6px
+
+  .education__item-description
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    margin-top: 5px
+    font-size: 16px
+
+
+  //
+  //sixth block Experience
+  //
+  .experience
+    background-color: greenyellow
+    //max-width: 56%
+    width: 652px
+    margin-top: 41px
+    margin-left: 80px
+
+  .experience .block-header__img
+    background-image: url('../img/EXPERIENCE.png')
+    width: 79px
+    height: 77px
+    margin-right: 18px
+
+  .experience .block-header__title
+    margin-right: 4px
+
+  .experience .block-header__line
+    width: 321px
+
+  .experience__list
+    padding-left: 54px
+    margin-top: 41px
+    position: relative
+
+  .experience__item-header
+    font-family: 'MyriadPro-Bold', Arial, sans-serif;
+    font-size: 27px
+    text-transform: uppercase
+    letter-spacing: -0.4px
+
+  .experience__item--addText
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 27px
+    text-transform: none
+
+  .experience__item--upper
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    text-transform: uppercase
+    font-size: 27px
+    margin-top: 3px
+    letter-spacing: -0.5px
+
+  .experience__item-description
+    margin-top: 4px
+
+  .experience__list-item
+    margin-bottom: 12px
+
+  .experience__list-item:nth-child(2)
+    margin-bottom: 14px
+
+  .experience__list-item > li::before
+    content: ''
+
+    position: absolute
+    top: 7px
+    left: 12px
+
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #000;
+
+
+
+  //
+  //seventh block Software
+  //
+  .software
+    background-color: greenyellow
+    width: 652px
+    margin-top: 42px
+    margin-left: 80px
+    //max-width: 56%
+
+  .software .block-header__img
+    background-image: url('../img/SOFTWARE.png')
+    width: 77px
+    height: 74px
+    margin-right: 19px
+
+  .software .block-header__title
+    margin-right: 25px
+
+  .software .block-header__line
+    width: 321px
+
+
+  .software__table
+    background-color: red;
+    border-collapse: collapse
+    width: 644px
+    margin-left: 6px
+    margin-top: 16px
+
+
+  .software__table td h3
+    margin: 0
+    letter-spacing: 0.5px
+
+  .software__item-header
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
+    font-size: 27px
+    text-transform: uppercase
+
+  .software__progress-empty
+    width: 285px
+    height: 23px
+    background-color: #e7e7e7
+
