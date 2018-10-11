@@ -12,18 +12,41 @@
 
 body
   margin: 0 auto
-  padding-top: 78px
-  margin-left: 63px
-  margin-right: 59px
+  background-color: #ddd
 
   main
-    max-height: 1811px
-    max-width: 1280px
+    margin: 0 auto
+    background-color: #fff
+    width: 1280px
+    height: 1811px
+    padding-top: 78px
+    padding-left: 63px
+    padding-right: 59px
+    padding-bottom: 98px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
     display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    //justify-content: space-between
+  //flex-direction: column
+  //flex-wrap: wrap
+  //justify-content: flex-start
 
+  .first-col
+    //background-color: orange
+    //display: flex
+    //flex-wrap: wrap
+
+  .second-col
+    //background-color: red
+    margin-left: 80px
+    //display: flex
+    //flex-wrap: wrap
+
+  section
+    flex: 0 1 auto
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
   // Common rules
   //
@@ -61,14 +84,13 @@ body
   //
   .bio
     display: flex
-    //max-width: 38%
     width: 425px
     flex-direction column
     align-items: center
-    background-color: greenyellow
+    //background-color: greenyellow
 
   .big-photo
-    margin-left: 17px
+    margin-left: 20px
     margin-top: 28px
     width: 209px
     height: 209px
@@ -110,8 +132,7 @@ body
   //second block Profile
   //
   .profile
-    background-color: greenyellow
-    //max-width: 38%
+    //background-color: greenyellow
     width: 425px
     margin-top: 62px
 
@@ -119,7 +140,7 @@ body
     background-image: url("../img/PROFILE.png")
     width: 77px
     height: 74px
-    margin-right: 9px;
+    margin-right: 8px;
 
   .profile .block-header__title
     margin-right: 9px
@@ -140,16 +161,15 @@ body
   //third block Contact
   //
   .contact
-    //max-width: 38%
     width: 425px
-    margin-top: 53px
-    background-color: greenyellow
+    margin-top: 48px
+    //background-color: greenyellow
 
   .contact .block-header__img
     background-image: url('../img/Phone.png')
     width: 74px
     height: 74px
-    margin-right: 12px
+    margin-right: 11px
 
   .contact .block-header__title
     margin-right: 7px
@@ -164,7 +184,7 @@ body
     text-align: left
     vertical-align: top
 
-  th
+  .contact__table th
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
     font-size: 22px
     color: #006cb4
@@ -172,22 +192,22 @@ body
     width: 131px
     letter-spacing: -0.5px
 
-  td
+  .contact__table td
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 22px
     letter-spacing: -0.4px
 
-  tr
+  .contact__table tr
     height: 56px
 
   //
   //fourth block Skills
   //
   .skills
-    margin-top: 33px
-    //max-width: 38%
+    oreder: 6
+    margin-top: 34px
     width: 425px
-    background-color: greenyellow
+    //background-color: greenyellow
 
   .skills .block-header__img
     background-image: url('../img/SKILLS.png')
@@ -211,9 +231,9 @@ body
     margin-top: 22px
     height: 286px
     justify-content: space-between
+    font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 23px
     text-transform: uppercase
-    padding-bottom: 106px
 
   .skills__description
     height: 51px
@@ -223,9 +243,12 @@ body
     justify-content: space-between
     align-items: center
 
+  .skill__level
+
 
   .skill__level-point
     display: flex
+    flex: 0 1 auto
 
   .empty-point
     width: 18px
@@ -242,16 +265,14 @@ body
   //fifth block Education
   //
   .education
-    background-color: greenyellow
-    //max-width: 56%
+    //background-color: greenyellow
     width: 652px
-    margin-left: 80px
 
   .education .block-header__img
     background-image: url('../img/EDUCATION.png')
     width: 77px
     height: 74px
-    margin-right: 20px
+    margin-right: 19px
 
   .education .block-header__title
     margin-right: 10px
@@ -263,7 +284,7 @@ body
     content: ''
 
     position: absolute
-    left: 12px
+    left: -41px
     top: 7px
 
     width: 20px
@@ -275,16 +296,16 @@ body
   .education__list
     margin-top: 26px
     padding-left: 54px
-    position: relative
 
   .education__item
+    position: relative
     margin-bottom: 11px
 
   .education__item:nth-child(2)
     margin-bottom: 9px
 
   .education__item:nth-child(3)
-    margin-bottom: 8px
+    margin-bottom: 7px
 
   .education__item-header--bold
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
@@ -313,11 +334,9 @@ body
   //sixth block Experience
   //
   .experience
-    background-color: greenyellow
-    //max-width: 56%
+    //background-color: greenyellow
     width: 652px
-    margin-top: 41px
-    margin-left: 80px
+    margin-top: 51px
 
   .experience .block-header__img
     background-image: url('../img/EXPERIENCE.png')
@@ -334,7 +353,6 @@ body
   .experience__list
     padding-left: 54px
     margin-top: 41px
-    position: relative
 
   .experience__item-header
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
@@ -358,17 +376,18 @@ body
     margin-top: 4px
 
   .experience__list-item
-    margin-bottom: 12px
+    position: relative
+    margin-bottom: 8px
 
   .experience__list-item:nth-child(2)
-    margin-bottom: 14px
+    margin-bottom: 9px
 
   .experience__list-item > li::before
     content: ''
 
     position: absolute
     top: 7px
-    left: 12px
+    left: -41px
 
     width: 20px
     height: 20px
@@ -381,17 +400,15 @@ body
   //seventh block Software
   //
   .software
-    background-color: greenyellow
+    //background-color: greenyellow
     width: 652px
-    margin-top: 42px
-    margin-left: 80px
-    //max-width: 56%
+    margin-top: 50px
 
   .software .block-header__img
     background-image: url('../img/SOFTWARE.png')
     width: 77px
     height: 74px
-    margin-right: 19px
+    margin-right: 18px
 
   .software .block-header__title
     margin-right: 25px
@@ -399,26 +416,57 @@ body
   .software .block-header__line
     width: 321px
 
-
   .software__table
-    background-color: red;
     border-collapse: collapse
     width: 644px
     margin-left: 6px
-    margin-top: 16px
+    margin-top: 25px
 
+  .software__table tr
+    height: 45px
+    vertical-align: top
 
-  .software__table td h3
+  .software__table .col-1
+    width: 100%
+
+  .software__table h3
     margin: 0
-    letter-spacing: 0.5px
-
-  .software__item-header
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 27px
     text-transform: uppercase
+    letter-spacing: -0.2px
 
   .software__progress-empty
     width: 285px
     height: 23px
     background-color: #e7e7e7
 
+  .photoshop
+    background-color: #006cb4
+    width: 260px
+    height: 23px
+
+  .dreamweaver
+    background-color: #006cb4
+    width: 237px
+    height: 23px
+
+  .illustrator
+    background-color: #006cb4
+    width: 201px
+    height: 23px
+
+  .ae
+    background-color: #006cb4
+    width: 176px
+    height: 23px
+
+  .indesign
+    background-color: #006cb4
+    width: 162px
+    height: 23px
+
+  .html
+    background-color: #006cb4
+    width: 260px
+    height: 23px
