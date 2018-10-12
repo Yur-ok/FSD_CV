@@ -14,6 +14,40 @@ body
   margin: 0 auto
   background-color: #ddd
 
+//
+// Common rules
+//
+p
+  margin: 0
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.block-header__items
+  display: flex
+  align-items: center
+
+.block-header__img
+  background-size: 100%
+  background-repeat: no-repeat
+
+.block-header__title
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  text-transform: uppercase
+  font-size: 29px
+  letter-spacing: -1px
+
+.block-header__title > h2
+  margin: 0
+
+.block-header__line
+  background-color: #006cb4
+  height: 5px
+
+
+//@media (max-width: 2560px)
   main
     margin: 0 auto
     background-color: #fff
@@ -23,55 +57,13 @@ body
     padding-left: 63px
     padding-right: 59px
     padding-bottom: 98px
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
     box-sizing: border-box
     display: flex
 
   .first-col
+    margin-right: 80px
 
-  .second-col
-    margin-left: 80px
-
-  section
-    flex: 0 1 auto
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
-
-
-  //
-  // Common rules
-  //
-  p
-    margin: 0
-
-  ul
-    list-style-type: none
-    margin: 0
-    padding: 0
-
-  .block-header__items
-    display: flex
-    align-items: center
-
-  .block-header__img
-    background-size: 100%
-    background-repeat: no-repeat
-
-  .block-header__title
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    text-transform: uppercase
-    font-size: 29px
-    letter-spacing: -1px
-
-  .block-header__title > h2
-    margin: 0
-
-  .block-header__line
-    background-color: #006cb4
-    height: 5px
-
+  //.second-col
 
   //
   //first block BIO
@@ -126,16 +118,16 @@ body
   //
   .profile
     width: 425px
-    margin-top: 62px
+    margin-top: 63px
 
   .profile .block-header__img
     background-image: url("../img/PROFILE.png")
     width: 77px
     height: 74px
-    margin-right: 8px;
+    margin-right: 10px;
 
   .profile .block-header__title
-    margin-right: 9px
+    margin-right: 10px
 
   .profile .block-header__line
     width: 173px
@@ -154,16 +146,16 @@ body
   //
   .contact
     width: 425px
-    margin-top: 48px
+    margin-top: 45px
 
   .contact .block-header__img
     background-image: url('../img/Phone.png')
     width: 74px
     height: 74px
-    margin-right: 11px
+    margin-right: 14px
 
   .contact .block-header__title
-    margin-right: 7px
+    margin-right: 8px
 
   .contact .block-header__line
     width: 153px
@@ -233,12 +225,8 @@ body
     justify-content: space-between
     align-items: center
 
-  .skill__level
-
-
   .skill__level-point
     display: flex
-    flex: 0 1 auto
 
   .empty-point
     width: 18px
@@ -249,7 +237,6 @@ body
 
   .fill-point
     background-color: #006cb4
-
 
   //
   //fifth block Education
@@ -281,7 +268,6 @@ body
     border-radius: 50%
     background-color: #000
 
-
   .education__list
     margin-top: 26px
     padding-left: 54px
@@ -294,7 +280,7 @@ body
     margin-bottom: 9px
 
   .education__item:nth-child(3)
-    margin-bottom: 7px
+    margin-bottom: 9px
 
   .education__item-header--bold
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
@@ -304,9 +290,9 @@ body
 
   .education__item--addText
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 30px
-    letter-spacing: -1.3px
+    font-size: 27px
 
+  //letter-spacing: -1.3px
   .education__item--upper
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     text-transform: uppercase
@@ -317,7 +303,6 @@ body
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     margin-top: 5px
     font-size: 16px
-
 
   //
   //sixth block Experience
@@ -367,10 +352,13 @@ body
 
   .experience__list-item
     position: relative
-    margin-bottom: 8px
+    margin-bottom: 13px
+
+  //.experience__list-item br
+  //  display: none;
 
   .experience__list-item:nth-child(2)
-    margin-bottom: 9px
+    margin-bottom: 13px
 
   .experience__list-item > li::before
     content: ''
@@ -384,23 +372,21 @@ body
     border-radius: 50%
     background-color: #000;
 
-
-
   //
   //seventh block Software
   //
   .software
     width: 652px
-    margin-top: 50px
+    margin-top: 55px
 
   .software .block-header__img
     background-image: url('../img/SOFTWARE.png')
     width: 77px
     height: 74px
-    margin-right: 18px
+    margin-right: 20px
 
   .software .block-header__title
-    margin-right: 25px
+    margin-right: 27px
 
   .software .block-header__line
     width: 321px
@@ -459,3 +445,245 @@ body
     background-color: #006cb4
     width: 260px
     height: 23px
+
+@media (max-width: 768px)
+
+  main
+    width: 768px
+    height: auto
+    padding-top: 20px
+    flex-flow flex wrap
+    flex-direction: column
+
+  .first-col
+    margin: 0
+
+  .second-col
+    margin-top: 60px
+
+  .bio
+    width: auto
+
+  .profile
+    width: auto;
+
+  .profile .block-header__line
+    width: 395px;
+
+  .profile__description
+    width: auto;
+    margin-left: 20px
+    text-align: justify;
+    font-size: 17px
+
+  .contact
+    width: auto;
+
+  .contact .block-header__line
+    width: 373px
+
+  .contact__table
+    margin: 0 auto;
+
+  .contact__table td
+    font-size: 30px
+
+  .contact__table th
+    font-size: 30px
+    width: 180px
+
+  .skills
+    width: auto;
+
+  .skills .block-header__line
+    width: 423px
+
+  .empty-point
+    width: 25px
+    height: 25px
+
+  .education .block-header__line
+    width: 318px
+
+  .education__item-description
+    font-size: 17px
+    text-align: justify
+
+  .experience .block-header__line
+    width: 318px;
+
+  .experience__item-description
+    font-size: 17px
+    text-align: justify
+
+  .software .block-header__line
+    width: 314px
+
+  .software__table .col-1
+    width: 54%
+
+@media (max-width: 320px)
+  //
+  //common rules
+  //
+
+  .block-header__items
+    margin-bottom: 10px
+    flex-wrap wrap
+    flex-direction: column
+
+  main
+    width: 320px
+    padding: 10px 5px
+    display: flex
+    flex-wrap wrap
+    flex-direction: unset
+    //background: orange
+
+  .first-col
+    width: 100%
+
+  .second-col
+    width: 100%
+
+  .big-photo
+    margin-left: unset
+
+  .full-name__list
+    margin-left: unset
+
+  .profile
+    margin-top: 50px
+
+  .profile .block-header__img
+    margin: 0
+
+  .profile .block-header__title
+    margin: 0
+
+  .profile__description
+    margin: 0 20px
+
+  .profile .block-header__line
+    width: 95%
+
+  .contact
+    margin-top: 50px
+
+  .contact .block-header__img
+    margin: 0
+
+  .contact .block-header__title
+    margin: 0
+
+  .contact .block-header__line
+    width: 95%
+
+  .contact__table tr
+    height: 40px
+
+  .contact__table th
+    font-size: 20px
+    width: 100px
+
+  .contact__table td
+    font-size: 20px
+
+  .skills
+    margin-top: 50px
+
+  .skills .block-header__img
+    margin: 0
+
+  .skills .block-header__title
+    margin: 0
+
+  .skills .block-header__line
+    width: 95%
+
+  .skills__list
+    font-size: 18px
+
+  .skills__description
+    justify-content: unset
+
+  .empty-point
+    width: 15px
+    height: 15px
+    margin-right: 7px
+
+  .education
+    width: auto
+
+  .education .block-header__img
+    margin: 0
+
+  .education .block-header__title
+    margin: 0
+
+  .education .block-header__line
+    width: 95%
+
+  .education__list
+    padding-left: 30px
+
+  .education__item::before
+    left: -23px
+    top: 12px
+
+    width: 11px
+    height: 11px
+
+  .education__item-description
+    margin-right: 5px
+
+  .experience
+    width: 100%
+    margin-top: 50px
+
+  .experience .block-header__img
+    margin: 0
+
+  .experience .block-header__title
+    margin: 0
+
+  .experience .block-header__line
+    width: 95%
+
+  .experience__list
+    margin-top: 26px
+    padding-left: 30px
+
+  .experience__list-item >li::before
+    left: -23px
+    top: 12px
+
+    width: 11px
+    height: 11px
+
+  .experience__item-description
+    margin-right: 5px
+
+  .software
+    width: 100%
+    margin-top: 50px
+
+  .software .block-header__img
+    margin: 0
+
+  .software .block-header__title
+    margin: 0
+
+  .software .block-header__line
+    width: 95%
+
+  tbody
+    display: flex
+    flex-wrap wrap
+    flex-direction: column
+
+  .software__table
+    width: 100%
+
+  .software__table td
+    display: inline
