@@ -12,6 +12,7 @@ const webpack = require('webpack');
 
 
 module.exports = {
+    mode: 'development',
     entry: {
         main: './source/index.js'
     },
@@ -42,7 +43,6 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: "./fonts/[name].[ext]",
-                    // outputPath: 'fonts/'
                 }
             },
             {
@@ -51,17 +51,16 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: "./img/[name].[ext]",
-                    // outputPath: 'images/'
                 }
             }
         ]
     },
-    // devServer: {
+    devServer: {
     //     contentBase: path.join(__dirname, 'dist'),
     //     compress: true,
     //     open: true,
     //     hot: true
-    // },
+    },
 
     plugins: [
         new CleanWebpackPlugin('dist', {}),
@@ -74,8 +73,8 @@ module.exports = {
             template: './source/index.pug',
             filename: 'index.html'
         }),
-        // new WebpackMd5Hash(),
-        // new webpack.HotModuleReplacementPlugin(),
-        // new webpack.NamedModulesPlugin(),
+        new WebpackMd5Hash(),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NamedModulesPlugin(),
     ]
 };
