@@ -47,7 +47,244 @@ ul
   height: 5px
 
 
-//@media (max-width: 2560px)
+.first-col
+  margin-right: 80px
+
+//.second-col
+
+@media (mix-width: 320px)
+  //
+  //common rules
+  //
+  .block-header__items
+    margin-bottom: 10px
+    flex-wrap wrap
+    flex-direction: column
+
+  main
+    width: 320px
+    padding: 10px 5px
+    display: flex
+    flex-wrap wrap
+    flex-direction: unset
+
+  //background: orange
+  .first-col
+    width: 100%
+
+  .second-col
+    width: 100%
+
+  .big-photo
+    margin-left: unset
+
+  .full-name__list
+    margin-left: unset
+
+  .profile
+    //margin-top: 50px
+  .profile .block-header__img
+    margin: 0
+
+  .profile .block-header__title
+    margin: 0
+
+  .profile__description
+    margin: 0 20px
+
+  .profile .block-header__line
+    width: 95%
+
+  .contact
+    //margin-top: 50px
+  .contact .block-header__img
+    margin: 0
+
+  .contact .block-header__title
+    margin: 0
+
+  .contact .block-header__line
+    width: 95%
+
+  .contact__table tr
+    height: 40px
+
+  .contact__table th
+    font-size: 20px
+    width: 100px
+
+  .contact__table td
+    font-size: 20px
+
+  .skills
+    //margin-top: 50px
+  .skills .block-header__img
+    margin: 0
+
+  .skills .block-header__title
+    margin: 0
+
+  .skills .block-header__line
+    width: 95%
+
+  .skills__list
+    //font-size: 18px
+  .skills__description
+    justify-content: unset
+
+  .empty-point
+    width: 15px
+    height: 15px
+    margin-right: 7px
+
+  .education
+    width: auto
+
+  .education .block-header__img
+    //margin: 0
+  .education .block-header__title
+    //margin: 0
+  .education .block-header__line
+    width: 95%
+
+  .education__list
+    padding-left: 30px
+
+  .education__item::before
+    left: -23px
+    top: 12px
+
+    width: 11px
+    height: 11px
+
+  .education__item-description
+    margin-right: 5px
+
+  .experience
+    width: 100%
+
+  //margin-top: 50px
+  .experience .block-header__img
+    //margin: 0
+  .experience .block-header__title
+    //margin: 0
+  .experience .block-header__line
+    width: 95%
+
+  .experience__list
+    margin-top: 26px
+    padding-left: 30px
+
+  .experience__list-item > li::before
+    left: -23px
+    top: 12px
+
+    width: 11px
+    height: 11px
+
+  .experience__item-description
+    margin-right: 5px
+
+  .software
+    width: 100%
+
+  //margin-top: 50px
+  .software .block-header__img
+    //margin: 0
+  .software .block-header__title
+    //margin: 0
+  .software .block-header__line
+    width: 95%
+
+  tbody
+    display: flex
+    flex-wrap wrap
+    flex-direction: column
+
+  .software__table
+    width: 100%
+
+  .software__table td
+    display: inline
+
+@media (mix-width: 768px)
+
+  main
+    width: 768px
+    height: auto
+    padding-top: 20px
+    flex-flow flex wrap
+    flex-direction: column
+
+  .first-col
+    margin: 0
+
+  .second-col
+    margin-top: 60px
+
+  .bio
+    width: auto
+
+  .profile
+    width: auto;
+
+  .profile .block-header__line
+    width: 395px;
+
+  .profile__description
+    width: auto;
+    margin-left: 20px
+    text-align: justify;
+    font-size: 17px
+
+  .contact
+    width: auto;
+
+  .contact .block-header__line
+    width: 373px
+
+  .contact__table
+    margin: 0 auto;
+
+  .contact__table td
+    font-size: 30px
+
+  .contact__table th
+    font-size: 30px
+    width: 180px
+
+  .skills
+    width: auto;
+
+  .skills .block-header__line
+    width: 423px
+
+  .empty-point
+    width: 25px
+    height: 25px
+
+  .education .block-header__line
+    width: 318px
+
+  .education__item-description
+    font-size: 17px
+    text-align: justify
+
+  .experience .block-header__line
+    width: 318px;
+
+  .experience__item-description
+    font-size: 17px
+    text-align: justify
+
+  .software .block-header__line
+    width: 314px
+
+  .software__table .col-1
+    width: 54%
+
+@media (min-width: 1024px)
+
   main
     margin: 0 auto
     background-color: #fff
@@ -59,11 +296,6 @@ ul
     padding-bottom: 98px
     box-sizing: border-box
     display: flex
-
-  .first-col
-    margin-right: 80px
-
-  //.second-col
 
   //
   //first block BIO
@@ -118,7 +350,7 @@ ul
   //
   .profile
     width: 425px
-    margin-top: 63px
+    margin-top: 62px
 
   .profile .block-header__img
     background-image: url("../img/PROFILE.png")
@@ -146,7 +378,7 @@ ul
   //
   .contact
     width: 425px
-    margin-top: 45px
+    margin-top: 60px
 
   .contact .block-header__img
     background-image: url('../img/Phone.png')
@@ -188,7 +420,7 @@ ul
   //
   .skills
     oreder: 6
-    margin-top: 34px
+    margin-top: 33px
     width: 425px
 
   .skills .block-header__img
@@ -269,7 +501,7 @@ ul
     background-color: #000
 
   .education__list
-    margin-top: 26px
+    margin-top: 24px
     padding-left: 54px
 
   .education__item
@@ -292,7 +524,6 @@ ul
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 27px
 
-  //letter-spacing: -1.3px
   .education__item--upper
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     text-transform: uppercase
@@ -309,7 +540,7 @@ ul
   //
   .experience
     width: 652px
-    margin-top: 51px
+    margin-top: 53px
 
   .experience .block-header__img
     background-image: url('../img/EXPERIENCE.png')
@@ -354,11 +585,8 @@ ul
     position: relative
     margin-bottom: 13px
 
-  //.experience__list-item br
-  //  display: none;
-
   .experience__list-item:nth-child(2)
-    margin-bottom: 13px
+    margin-bottom: 8px
 
   .experience__list-item > li::before
     content: ''
@@ -377,7 +605,7 @@ ul
   //
   .software
     width: 652px
-    margin-top: 55px
+    margin-top: 50px
 
   .software .block-header__img
     background-image: url('../img/SOFTWARE.png')
@@ -445,245 +673,3 @@ ul
     background-color: #006cb4
     width: 260px
     height: 23px
-
-@media (max-width: 768px)
-
-  main
-    width: 768px
-    height: auto
-    padding-top: 20px
-    flex-flow flex wrap
-    flex-direction: column
-
-  .first-col
-    margin: 0
-
-  .second-col
-    margin-top: 60px
-
-  .bio
-    width: auto
-
-  .profile
-    width: auto;
-
-  .profile .block-header__line
-    width: 395px;
-
-  .profile__description
-    width: auto;
-    margin-left: 20px
-    text-align: justify;
-    font-size: 17px
-
-  .contact
-    width: auto;
-
-  .contact .block-header__line
-    width: 373px
-
-  .contact__table
-    margin: 0 auto;
-
-  .contact__table td
-    font-size: 30px
-
-  .contact__table th
-    font-size: 30px
-    width: 180px
-
-  .skills
-    width: auto;
-
-  .skills .block-header__line
-    width: 423px
-
-  .empty-point
-    width: 25px
-    height: 25px
-
-  .education .block-header__line
-    width: 318px
-
-  .education__item-description
-    font-size: 17px
-    text-align: justify
-
-  .experience .block-header__line
-    width: 318px;
-
-  .experience__item-description
-    font-size: 17px
-    text-align: justify
-
-  .software .block-header__line
-    width: 314px
-
-  .software__table .col-1
-    width: 54%
-
-@media (max-width: 320px)
-  //
-  //common rules
-  //
-
-  .block-header__items
-    margin-bottom: 10px
-    flex-wrap wrap
-    flex-direction: column
-
-  main
-    width: 320px
-    padding: 10px 5px
-    display: flex
-    flex-wrap wrap
-    flex-direction: unset
-    //background: orange
-
-  .first-col
-    width: 100%
-
-  .second-col
-    width: 100%
-
-  .big-photo
-    margin-left: unset
-
-  .full-name__list
-    margin-left: unset
-
-  .profile
-    margin-top: 50px
-
-  .profile .block-header__img
-    margin: 0
-
-  .profile .block-header__title
-    margin: 0
-
-  .profile__description
-    margin: 0 20px
-
-  .profile .block-header__line
-    width: 95%
-
-  .contact
-    margin-top: 50px
-
-  .contact .block-header__img
-    margin: 0
-
-  .contact .block-header__title
-    margin: 0
-
-  .contact .block-header__line
-    width: 95%
-
-  .contact__table tr
-    height: 40px
-
-  .contact__table th
-    font-size: 20px
-    width: 100px
-
-  .contact__table td
-    font-size: 20px
-
-  .skills
-    margin-top: 50px
-
-  .skills .block-header__img
-    margin: 0
-
-  .skills .block-header__title
-    margin: 0
-
-  .skills .block-header__line
-    width: 95%
-
-  .skills__list
-    font-size: 18px
-
-  .skills__description
-    justify-content: unset
-
-  .empty-point
-    width: 15px
-    height: 15px
-    margin-right: 7px
-
-  .education
-    width: auto
-
-  .education .block-header__img
-    margin: 0
-
-  .education .block-header__title
-    margin: 0
-
-  .education .block-header__line
-    width: 95%
-
-  .education__list
-    padding-left: 30px
-
-  .education__item::before
-    left: -23px
-    top: 12px
-
-    width: 11px
-    height: 11px
-
-  .education__item-description
-    margin-right: 5px
-
-  .experience
-    width: 100%
-    margin-top: 50px
-
-  .experience .block-header__img
-    margin: 0
-
-  .experience .block-header__title
-    margin: 0
-
-  .experience .block-header__line
-    width: 95%
-
-  .experience__list
-    margin-top: 26px
-    padding-left: 30px
-
-  .experience__list-item >li::before
-    left: -23px
-    top: 12px
-
-    width: 11px
-    height: 11px
-
-  .experience__item-description
-    margin-right: 5px
-
-  .software
-    width: 100%
-    margin-top: 50px
-
-  .software .block-header__img
-    margin: 0
-
-  .software .block-header__title
-    margin: 0
-
-  .software .block-header__line
-    width: 95%
-
-  tbody
-    display: flex
-    flex-wrap wrap
-    flex-direction: column
-
-  .software__table
-    width: 100%
-
-  .software__table td
-    display: inline
