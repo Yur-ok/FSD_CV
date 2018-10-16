@@ -11,8 +11,10 @@
   src: url('./fonts/MyriadPro-LightSemiExt.woff') format('woff');
 
 body
-  margin: 0 auto
+  margin: 0
   background-color: #ddd
+  display: flex;
+  justify-content: center;
 
 //
 // Common rules
@@ -30,646 +32,542 @@ ul
   align-items: center
 
 .block-header__img
-  background-size: 100%
+  background-size: cover
   background-repeat: no-repeat
+  flex-shrink 0
 
 .block-header__title
   font-family: 'MyriadPro-Bold', Arial, sans-serif;
   text-transform: uppercase
   font-size: 29px
   letter-spacing: -1px
-
-.block-header__title > h2
-  margin: 0
+  & > h2
+    margin: 0
 
 .block-header__line
   background-color: #006cb4
   height: 5px
+  width: 5px
+  flex-grow 1
 
+//@media (min-width: 1024px)
+
+main
+  //margin: 0 auto
+  background-color: #fff
+  width: 1280px
+  //padding-top: 78px
+  padding-top: 4.1%
+  //padding-left: 63px
+  padding-left: 3.3%
+  //padding-right: 59px
+  padding-right: 3.1%
+  //padding-bottom: 75px
+  padding-bottom: 3.4%
+  box-sizing: border-box
+  display: flex
+  flex: 0 1 auto
+  flex-flow row wrap
+  justify-content: space-between;
 
 .first-col
-  margin-right: 80px
-
-//.second-col
-
-@media (mix-width: 320px)
-  //
-  //common rules
-  //
-  .block-header__items
-    margin-bottom: 10px
-    flex-wrap wrap
-    flex-direction: column
-
-  main
-    width: 320px
-    padding: 10px 5px
-    display: flex
-    flex-wrap wrap
-    flex-direction: unset
-
-  //background: orange
-  .first-col
-    width: 100%
-
-  .second-col
-    width: 100%
-
-  .big-photo
-    margin-left: unset
-
-  .full-name__list
-    margin-left: unset
-
-  .profile
-    //margin-top: 50px
-  .profile .block-header__img
-    margin: 0
-
-  .profile .block-header__title
-    margin: 0
-
-  .profile__description
-    margin: 0 20px
-
-  .profile .block-header__line
-    width: 95%
-
-  .contact
-    //margin-top: 50px
-  .contact .block-header__img
-    margin: 0
-
-  .contact .block-header__title
-    margin: 0
-
-  .contact .block-header__line
-    width: 95%
-
-  .contact__table tr
-    height: 40px
-
-  .contact__table th
-    font-size: 20px
-    width: 100px
-
-  .contact__table td
-    font-size: 20px
-
-  .skills
-    //margin-top: 50px
-  .skills .block-header__img
-    margin: 0
-
-  .skills .block-header__title
-    margin: 0
-
-  .skills .block-header__line
-    width: 95%
-
-  .skills__list
-    //font-size: 18px
-  .skills__description
-    justify-content: unset
-
-  .empty-point
-    width: 15px
-    height: 15px
-    margin-right: 7px
-
-  .education
-    width: auto
-
-  .education .block-header__img
-    //margin: 0
-  .education .block-header__title
-    //margin: 0
-  .education .block-header__line
-    width: 95%
-
-  .education__list
-    padding-left: 30px
-
-  .education__item::before
-    left: -23px
-    top: 12px
-
-    width: 11px
-    height: 11px
-
-  .education__item-description
-    margin-right: 5px
-
-  .experience
-    width: 100%
-
-  //margin-top: 50px
-  .experience .block-header__img
-    //margin: 0
-  .experience .block-header__title
-    //margin: 0
-  .experience .block-header__line
-    width: 95%
-
-  .experience__list
-    margin-top: 26px
-    padding-left: 30px
-
-  .experience__list-item > li::before
-    left: -23px
-    top: 12px
-
-    width: 11px
-    height: 11px
-
-  .experience__item-description
-    margin-right: 5px
-
-  .software
-    width: 100%
-
-  //margin-top: 50px
-  .software .block-header__img
-    //margin: 0
-  .software .block-header__title
-    //margin: 0
-  .software .block-header__line
-    width: 95%
-
-  tbody
-    display: flex
-    flex-wrap wrap
-    flex-direction: column
-
-  .software__table
-    width: 100%
-
-  .software__table td
-    display: inline
-
-@media (mix-width: 768px)
-
-  main
-    width: 768px
-    height: auto
-    padding-top: 20px
-    flex-flow flex wrap
-    flex-direction: column
-
-  .first-col
-    margin: 0
-
-  .second-col
-    margin-top: 60px
-
-  .bio
-    width: auto
-
-  .profile
-    width: auto;
-
-  .profile .block-header__line
-    width: 395px;
-
-  .profile__description
-    width: auto;
-    margin-left: 20px
-    text-align: justify;
-    font-size: 17px
-
-  .contact
-    width: auto;
-
-  .contact .block-header__line
-    width: 373px
-
-  .contact__table
-    margin: 0 auto;
-
-  .contact__table td
-    font-size: 30px
-
-  .contact__table th
-    font-size: 30px
-    width: 180px
-
-  .skills
-    width: auto;
-
-  .skills .block-header__line
-    width: 423px
-
-  .empty-point
-    width: 25px
-    height: 25px
-
-  .education .block-header__line
-    width: 318px
-
-  .education__item-description
-    font-size: 17px
-    text-align: justify
-
-  .experience .block-header__line
-    width: 318px;
-
-  .experience__item-description
-    font-size: 17px
-    text-align: justify
-
-  .software .block-header__line
-    width: 314px
-
-  .software__table .col-1
-    width: 54%
-
-@media (min-width: 1024px)
-
-  main
-    margin: 0 auto
-    background-color: #fff
-    width: 1280px
-    height: 1811px
-    padding-top: 78px
-    padding-left: 63px
-    padding-right: 59px
-    padding-bottom: 98px
-    box-sizing: border-box
-    display: flex
-
+  //background-color: blueviolet
+  width: 425px
+  margin-right: 20px
+
+  //width: 36.8%
+  //display: flex
+  flex: 0 0 auto
+  flex-wrap wrap
+
+//margin-right: 7%
+//margin-right: 80px
+
+.second-col
+  //background-color: firebrick
+  width: 652px
+  flex: 0 1 auto
+
+section
+  //flex: 0 1 auto
+  //width: 56.4%
   //
   //first block BIO
   //
-  .bio
-    display: flex
-    width: 425px
-    flex-direction column
-    align-items: center
+.bio
+  //flex-grow: 1
+  display: flex
+  flex-wrap wrap
+  justify-content: center
+  padding-left: 4.5%
 
-  .big-photo
-    margin-left: 20px
-    margin-top: 28px
-    width: 209px
-    height: 209px
-    border-radius 50%
-    background-color: #006cb4
-    box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4
+//padding-left: 19px
 
-  .full-name__list > li > h2
-    margin: 0
+.big-photo
+  margin-top: 28px
+  width: 209px
+  height: 209px
+  border-radius 50%
+  background-color: #006cb4
+  box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4
 
-  .full-name__list
-    margin-top: 41px
-    margin-left: 14px;
-    text-align: center;
-    list-style-type: none
-    white-space: nowrap
+.full-name__list > li > h2
+  margin: 0
 
-  .full-name__name
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 37px
-    letter-spacing: 0.5px
-    text-transform: uppercase
+.full-name__list
+  margin-top: 40px
+  list-style-type: none
+  white-space: nowrap
 
-  .full-name__surname
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    font-size: 43px
-    text-transform: uppercase;
-    line-height: 44px
-    letter-spacing: -1px
+.full-name__name
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 37px
+  letter-spacing: 0.5px
+  text-transform: uppercase
 
-  .full-name__position
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    text-transform: uppercase
-    line-height: 62px
-    font-size: 18px
-    letter-spacing: -1.4px
+.full-name__surname
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  font-size: 43px
+  text-transform: uppercase;
+  line-height: 44px
+  letter-spacing: -1px
 
-  //
-  //second block Profile
-  //
-  .profile
-    width: 425px
-    margin-top: 62px
+.full-name__position
+  text-align: center
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  text-transform: uppercase
+  line-height: 62px
+  font-size: 18px
+  letter-spacing: -1.4px
 
-  .profile .block-header__img
-    background-image: url("../img/PROFILE.png")
-    width: 77px
-    height: 74px
-    margin-right: 10px;
+//
+//second block Profile
+//
+.profile
+  //width: 425px
+  flex-grow: 1
+  margin-top: 63px
 
-  .profile .block-header__title
-    margin-right: 10px
+.profile .block-header__img
+  background-image: url("../img/PROFILE.png")
+  width: 77px
+  height: 74px
+  margin-right: 10px;
 
-  .profile .block-header__line
-    width: 173px
+.profile .block-header__title
+  margin-right: 11px
 
-  .profile__description
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    margin-top: 13px
-    width: 425px
-    line-height: 1.2
+//.profile .block-header__line
 
-  .profile__description--bold
+.profile__description
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  margin-top: 13px
+  //width: 425px
+  line-height: 1.2
+
+  span
     font-weight: bold;
 
-  //
-  //third block Contact
-  //
-  .contact
-    width: 425px
-    margin-top: 60px
+//
+//third block Contact
+//
+.contact
+  //flex-grow: 1
+  margin-top: 48px
+  display: flex
+  flex-flow column wrap
 
+.contact .block-header__img
+  background-image: url('../img/Phone.png')
+  width: 74px
+  height: 74px
+  margin-right: 14px
+
+.contact .block-header__title
+  margin-right: 9px
+
+.contact__table
+  border-collapse: collapse
+  margin-top: 18px
+  margin-left: -1.1px;
+  text-align: left
+  vertical-align: top
+
+.contact__table th
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  font-size: 22px
+  color: #006cb4
+  text-transform: uppercase
+  width: 131px
+  letter-spacing: -0.5px
+
+.contact__table td
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 22px
+  letter-spacing: -0.4px
+
+.contact__table tr
+  height: 56px
+
+//
+//fourth block Skills
+//
+.skills
+  margin-top: 34px
+
+//width: 425px
+
+.skills .block-header__img
+  background-image: url('../img/SKILLS.png')
+  height: 74px;
+  width: 74px;
+  margin-right: 10px
+
+.skills .block-header__title
+  margin-right: 15px
+
+.skill__header > h3
+  margin-top: 0
+  margin-bottom: 8px
+
+.skills__list
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-top: 22px
+  height: 286px
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 23px
+  text-transform: uppercase
+
+.skills__description
+  height: 51px
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.skill__level-point
+  width: 331px
+  display: flex
+  flex: initial
+  justify-content: space-between
+
+.empty-point
+  width: 18px
+  height: 18px
+  border-radius: 50%
+  background-color: #e7e7e7
+
+//margin-right: 10px
+
+.fill-point
+  background-color: #006cb4
+
+//
+//fifth block Education
+//
+.education
+  //width: 652px
+.education .block-header__img
+  background-image: url('../img/EDUCATION.png')
+  width: 77px
+  height: 74px
+  margin-right: 19px
+
+.education .block-header__title
+  margin-right: 10px
+
+//.education .block-header__line
+//  width: 321px
+
+.education__item::before
+  content: ''
+
+  position: absolute
+  left: -41px
+  top: 7px
+
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  background-color: #000
+
+.education__list
+  margin-top: 24px
+  padding-left: 54px
+
+.education__item
+  position: relative
+  margin-bottom: 11px
+
+.education__item:nth-child(2)
+  margin-bottom: 9px
+
+.education__item:nth-child(3)
+  margin-bottom: 9px
+
+.education__item-header--bold
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  font-size: 30px
+  letter-spacing: -2.3px
+  text-transform: uppercase
+
+.education__item--addText
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 27px
+
+.education__item--upper
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  text-transform: uppercase
+  font-size: 27px
+  letter-spacing: -0.6px
+
+.education__item-description
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  margin-top: 5px
+  font-size: 16px
+
+//
+//sixth block Experience
+//
+.experience
+  //width: 652px
+  margin-top: 53px
+
+.experience .block-header__img
+  background-image: url('../img/EXPERIENCE.png')
+  width: 79px
+  height: 77px
+  margin-right: 18px
+
+.experience .block-header__title
+  margin-right: 4px
+
+//.experience .block-header__line
+//  width: 321px
+
+.experience__list
+  padding-left: 54px
+  margin-top: 41px
+
+.experience__item-header
+  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  font-size: 27px
+  text-transform: uppercase
+  letter-spacing: -0.4px
+
+.experience__item--addText
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 27px
+  text-transform: none
+
+.experience__item--upper
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  text-transform: uppercase
+  font-size: 27px
+  margin-top: 3px
+  letter-spacing: -0.5px
+
+.experience__item-description
+  margin-top: 4px
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 16px
+
+.experience__list-item
+  position: relative
+  margin-bottom: 14px
+
+.experience__list-item:nth-child(2)
+  margin-bottom: 13px
+
+.experience__list-item > li::before
+  content: ''
+
+  position: absolute
+  top: 7px
+  left: -41px
+
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  background-color: #000;
+
+//
+//seventh block Software
+//
+.software
+  //width: 652px
+  margin-top: 47px
+
+.software .block-header__img
+  background-image: url('../img/SOFTWARE.png')
+  width: 77px
+  height: 74px
+  margin-right: 20px
+
+.software .block-header__title
+  margin-right: 27px
+
+.software__table
+  border-collapse: collapse
+  width: auto
+  margin: 25px 6px 0
+
+.software__table tr
+  height: 45px
+  vertical-align: top
+
+.software__table .col-1
+  width: 100%
+
+.software__table h3
+  margin: 0
+  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-size: 27px
+  text-transform: uppercase
+  letter-spacing: -0.2px
+
+.software__progress-empty
+  width: 285px
+  height: 23px
+  background-color: #e7e7e7
+
+.photoshop
+  background-color: #006cb4
+  width: 260px
+  height: 23px
+
+.dreamweaver
+  background-color: #006cb4
+  width: 237px
+  height: 23px
+
+.illustrator
+  background-color: #006cb4
+  width: 201px
+  height: 23px
+
+.ae
+  background-color: #006cb4
+  width: 176px
+  height: 23px
+
+.indesign
+  background-color: #006cb4
+  width: 162px
+  height: 23px
+
+.html
+  background-color: #006cb4
+  width: 260px
+  height: 23px
+
+
+
+
+@media (max-width: 1187px)
+
+  //common rules
+  .block-header__items
+    flex-flow column wrap
+
+  .profile .block-header__img
+  .profile .block-header__title
   .contact .block-header__img
-    background-image: url('../img/Phone.png')
-    width: 74px
-    height: 74px
-    margin-right: 14px
-
   .contact .block-header__title
-    margin-right: 8px
-
-  .contact .block-header__line
-    width: 153px
-
-  .contact__table
-    border-collapse: collapse
-    margin-top: 18px
-    margin-left: -1.1px;
-    text-align: left
-    vertical-align: top
-
-  .contact__table th
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    font-size: 22px
-    color: #006cb4
-    text-transform: uppercase
-    width: 131px
-    letter-spacing: -0.5px
-
-  .contact__table td
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 22px
-    letter-spacing: -0.4px
-
-  .contact__table tr
-    height: 56px
-
-  //
-  //fourth block Skills
-  //
-  .skills
-    oreder: 6
-    margin-top: 33px
-    width: 425px
-
   .skills .block-header__img
-    background-image: url('../img/SKILLS.png')
-    height: 74px;
-    width: 74px;
-    margin-right: 10px
-
   .skills .block-header__title
-    margin-right: 15px
-
-  .skills .block-header__line
-    width: 199px
-
-  .skill__header > h3
-    margin-top: 0
-    margin-bottom: 8px
-
-  .skills__list
-    display: flex
-    flex-direction: column
-    margin-top: 22px
-    height: 286px
-    justify-content: space-between
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 23px
-    text-transform: uppercase
-
-  .skills__description
-    height: 51px
-    text-align: center
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: center
-
-  .skill__level-point
-    display: flex
-
-  .empty-point
-    width: 18px
-    height: 18px
-    border-radius: 50%
-    background-color: #e7e7e7
-    margin-right: 10px
-
-  .fill-point
-    background-color: #006cb4
-
-  //
-  //fifth block Education
-  //
-  .education
-    width: 652px
-
   .education .block-header__img
-    background-image: url('../img/EDUCATION.png')
-    width: 77px
-    height: 74px
-    margin-right: 19px
-
   .education .block-header__title
-    margin-right: 10px
-
-  .education .block-header__line
-    width: 321px
-
-  .education__item::before
-    content: ''
-
-    position: absolute
-    left: -41px
-    top: 7px
-
-    width: 20px
-    height: 20px
-    border-radius: 50%
-    background-color: #000
-
-  .education__list
-    margin-top: 24px
-    padding-left: 54px
-
-  .education__item
-    position: relative
-    margin-bottom: 11px
-
-  .education__item:nth-child(2)
-    margin-bottom: 9px
-
-  .education__item:nth-child(3)
-    margin-bottom: 9px
-
-  .education__item-header--bold
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    font-size: 30px
-    letter-spacing: -2.3px
-    text-transform: uppercase
-
-  .education__item--addText
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 27px
-
-  .education__item--upper
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    text-transform: uppercase
-    font-size: 27px
-    letter-spacing: -0.6px
-
-  .education__item-description
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    margin-top: 5px
-    font-size: 16px
-
-  //
-  //sixth block Experience
-  //
-  .experience
-    width: 652px
-    margin-top: 53px
-
   .experience .block-header__img
-    background-image: url('../img/EXPERIENCE.png')
-    width: 79px
-    height: 77px
-    margin-right: 18px
-
   .experience .block-header__title
-    margin-right: 4px
-
-  .experience .block-header__line
-    width: 321px
-
-  .experience__list
-    padding-left: 54px
-    margin-top: 41px
-
-  .experience__item-header
-    font-family: 'MyriadPro-Bold', Arial, sans-serif;
-    font-size: 27px
-    text-transform: uppercase
-    letter-spacing: -0.4px
-
-  .experience__item--addText
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 27px
-    text-transform: none
-
-  .experience__item--upper
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    text-transform: uppercase
-    font-size: 27px
-    margin-top: 3px
-    letter-spacing: -0.5px
-
-  .experience__item-description
-    margin-top: 4px
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 16px
-
-  .experience__list-item
-    position: relative
-    margin-bottom: 13px
-
-  .experience__list-item:nth-child(2)
-    margin-bottom: 8px
-
-  .experience__list-item > li::before
-    content: ''
-
-    position: absolute
-    top: 7px
-    left: -41px
-
-    width: 20px
-    height: 20px
-    border-radius: 50%
-    background-color: #000;
-
-  //
-  //seventh block Software
-  //
-  .software
-    width: 652px
-    margin-top: 50px
-
   .software .block-header__img
-    background-image: url('../img/SOFTWARE.png')
-    width: 77px
-    height: 74px
-    margin-right: 20px
-
   .software .block-header__title
-    margin-right: 27px
+    margin: 0
 
-  .software .block-header__line
-    width: 321px
-
-  .software__table
-    border-collapse: collapse
-    width: 644px
-    margin-left: 6px
-    margin-top: 25px
-
-  .software__table tr
-    height: 45px
-    vertical-align: top
-
-  .software__table .col-1
+  .block-header__line
     width: 100%
 
-  .software__table h3
+  .first-col
     margin: 0
-    font-family: 'MyriadPro-Regular', Arial, sans-serif;
-    font-size: 27px
-    text-transform: uppercase
-    letter-spacing: -0.2px
+    width: 100%
+    margin-bottom: 50px
 
-  .software__progress-empty
-    width: 285px
-    height: 23px
-    background-color: #e7e7e7
+  .second-col
+    width: 100%
 
-  .photoshop
-    background-color: #006cb4
-    width: 260px
-    height: 23px
+  //end common rules
 
-  .dreamweaver
-    background-color: #006cb4
-    width: 237px
-    height: 23px
+  .bio
+    justify-content: space-evenly
 
-  .illustrator
-    background-color: #006cb4
-    width: 201px
-    height: 23px
+  .big-photo
+    margin-right: 20px
 
-  .ae
-    background-color: #006cb4
-    width: 176px
-    height: 23px
+  .full-name__list
+    align-self center
 
-  .indesign
-    background-color: #006cb4
-    width: 162px
-    height: 23px
+  .profile__description
+    margin: 20px 20px
+    text-align: justify
 
-  .html
-    background-color: #006cb4
-    width: 260px
-    height: 23px
+  .contact tbody
+    display: flex
+    flex-flow row wrap
+    justify-content: space-around;
+    margin: 0 5%
+
+  .contact tbody tr
+    width: 50%
+
+  .software__table .col-1
+    width: 60%
+    padding-right: 5%
+
+  .software__table
+    margin: 25px auto 0
+
+
+
+
+@media (max-width: 715px)
+
+  .big-photo
+    margin-right 0
+
+  .contact__table th
+    text-align: right
+    padding-right: 10%
+
+  .contact__table td
+    width: 50%
+
+  .contact tbody
+    margin: 0
+    display: table
+    width: 100%
+
+
+  .education__item-description
+  .experience__item-description
+    text-align: justify
+
+
+
+@media (max-width: 663px) and (min-width: 0px)
+
+  body
+    background-color: #fff;
+
+
+  .software__table tr
+    display: flex
+    flex-direction: column
+
+  .software__table td
+    display: block
+
+  .software__table .col-1
+    padding-bottom: 240px
+
