@@ -3,6 +3,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // Для создания css файла
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const poststylus = require('poststylus');
+
 // Для отчистки дериктории назначения перед созданием сборки
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 //
@@ -56,11 +59,16 @@ module.exports = {
         ]
     },
     devServer: {
-    //     contentBase: path.join(__dirname, 'dist'),
-    //     compress: true,
-    //     open: true,
-    //     hot: true
+        //     contentBase: path.join(__dirname, 'dist'),
+        //     compress: true,
+        //     open: true,
+        //     hot: true
     },
+/*    stylus: {
+        use: [
+            poststylus(['autoprefixer'])
+        ]
+    }*/
 
     plugins: [
         new CleanWebpackPlugin('dist', {}),
