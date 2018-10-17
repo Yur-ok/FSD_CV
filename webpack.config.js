@@ -1,17 +1,20 @@
 const path = require('path');
 // Для работы с HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 // Для создания css файла
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const poststylus = require('poststylus');
-
 // Для отчистки дериктории назначения перед созданием сборки
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 //
 const WebpackMd5Hash = require('webpack-md5-hash');
+
+
 //
 const webpack = require('webpack');
+
 
 
 module.exports = {
@@ -21,7 +24,7 @@ module.exports = {
     },
 
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: '[name].[hash].js',
     },
 
@@ -58,20 +61,22 @@ module.exports = {
             }
         ]
     },
+
     devServer: {
-        //     contentBase: path.join(__dirname, 'dist'),
+        //     contentBase: path.join(__dirname, 'docs'),
         //     compress: true,
         //     open: true,
         //     hot: true
     },
-/*    stylus: {
-        use: [
-            poststylus(['autoprefixer'])
-        ]
-    }*/
+
+    // stylus: {
+    //     use: [
+    //         poststylus(['autoprefixer'])
+    //     ]
+    // },
 
     plugins: [
-        new CleanWebpackPlugin('dist', {}),
+        new CleanWebpackPlugin('docs', {}),
         new MiniCssExtractPlugin({
             filename: 'style.[hash].css',
         }),
