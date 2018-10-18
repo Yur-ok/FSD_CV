@@ -1,16 +1,16 @@
 const path = require('path');
+
 // Для работы с HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Для создания css файла
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const poststylus = require('poststylus');
 // Для отчистки дериктории назначения перед созданием сборки
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 //
 const WebpackMd5Hash = require('webpack-md5-hash');
-
 
 //
 const webpack = require('webpack');
@@ -19,13 +19,19 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
+    context: path.resolve(__dirname, './'),
     entry: {
         main: './source/index.js'
     },
 
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: '[name].[hash].js',
+        filename: '[name].bandle.[hash].js',
+    },
+
+    optimization: {
+        noEmitOnErrors: true,
+
     },
 
     module: {
@@ -41,7 +47,13 @@ module.exports = {
             {
                 test: /\.styl$/,
                 exclude: /(node_modules|.git)/,
-                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'stylus-loader']
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'stylus-loader'
+                ]
             },
             {
                 test: /\.(eot|woff|woff2|ttf)$/,
@@ -63,22 +75,15 @@ module.exports = {
     },
 
     devServer: {
-        //     contentBase: path.join(__dirname, 'docs'),
-        //     compress: true,
-        //     open: true,
-        //     hot: true
+        contentBase: path.join(__dirname, 'docs'),
+        compress: true,
+        overlay: true,
     },
-
-    // stylus: {
-    //     use: [
-    //         poststylus(['autoprefixer'])
-    //     ]
-    // },
 
     plugins: [
         new CleanWebpackPlugin('docs', {}),
         new MiniCssExtractPlugin({
-            filename: 'style.[hash].css',
+            // filename: 'style.[hash].css',
         }),
         new HtmlWebpackPlugin({
             inject: true,
@@ -87,7 +92,5 @@ module.exports = {
             filename: 'index.html'
         }),
         new WebpackMd5Hash(),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NamedModulesPlugin(),
     ]
 };
