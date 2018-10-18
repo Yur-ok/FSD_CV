@@ -13,8 +13,10 @@
 body {
   margin: 0;
   background-color: #ddd;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 p {
   margin: 0;
@@ -25,8 +27,10 @@ ul {
   padding: 0;
 }
 .block-header__items {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 .block-header__img {
   background-size: cover;
@@ -46,7 +50,8 @@ ul {
   background-color: #006cb4;
   height: 5px;
   width: 5px;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 main {
   background-color: #fff;
@@ -56,25 +61,34 @@ main {
   padding-right: 3.1%;
   padding-bottom: 3.4%;
   box-sizing: border-box;
+  display: -webkit-box;
   display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .first-col {
   width: 425px;
   margin-right: 20px;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
   flex-wrap: wrap;
 }
 .second-col {
   width: 652px;
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
 }
 .bio {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   padding-left: 4.5%;
 }
 .big-photo {
@@ -115,7 +129,8 @@ main {
   letter-spacing: -1.4px;
 }
 .profile {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   margin-top: 63px;
 }
 .profile .block-header__img {
@@ -137,8 +152,11 @@ main {
 }
 .contact {
   margin-top: 48px;
+  display: -webkit-box;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
 }
 .contact .block-header__img {
   background-image: url(./img/Phone.png);
@@ -189,9 +207,13 @@ main {
   margin-bottom: 8px;
 }
 .skills__list {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-top: 22px;
   height: 286px;
   font-family: 'MyriadPro-Regular', Arial, sans-serif;
@@ -201,15 +223,22 @@ main {
 .skills__description {
   height: 51px;
   text-align: center;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
 }
 .skill__level-point {
   width: 331px;
+  display: -webkit-box;
   display: flex;
-  flex: initial;
-  justify-content: space-between;
+  -webkit-box-flex: initial;
+          flex: initial;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .empty-point {
   width: 18px;
@@ -402,7 +431,9 @@ main {
     padding-right: 3%;
   }
   .block-header__items {
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
   }
   .profile .block-header__img,
   .profile .block-header__title,
@@ -430,7 +461,8 @@ main {
     width: 100%;
   }
   .bio {
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .big-photo {
     margin-right: 20px;
@@ -443,8 +475,11 @@ main {
     text-align: justify;
   }
   .contact tbody {
+    display: -webkit-box;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
     justify-content: space-around;
     margin: 0 5%;
   }
@@ -461,8 +496,13 @@ main {
 }
 @media (max-width: 715px) {
   .bio {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   .big-photo {
     margin-right: 0;
@@ -489,8 +529,11 @@ main {
     background-color: #fff;
   }
   .software__table tr {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
   .software__table td {
     display: block;
