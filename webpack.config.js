@@ -78,6 +78,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'docs'),
         compress: true,
         overlay: true,
+        open: true
     },
 
     plugins: [
