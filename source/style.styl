@@ -50,19 +50,13 @@ ul
   width: 5px
   flex-grow 1
 
-//@media (min-width: 1024px)
 
 main
-  //margin: 0 auto
   background-color: #fff
   width: 1280px
-  //padding-top: 78px
   padding-top: 4.1%
-  //padding-left: 63px
   padding-left: 3.3%
-  //padding-right: 59px
   padding-right: 3.1%
-  //padding-bottom: 75px
   padding-bottom: 3.4%
   box-sizing: border-box
   display: flex
@@ -71,81 +65,25 @@ main
   justify-content: space-between;
 
 .first-col
-  //background-color: blueviolet
   width: 425px
   margin-right: 20px
-
-  //width: 36.8%
-  //display: flex
   flex: 0 0 auto
   flex-wrap wrap
 
-//margin-right: 7%
-//margin-right: 80px
-
 .second-col
-  //background-color: firebrick
   width: 652px
   flex: 0 1 auto
 
-section
-  //flex: 0 1 auto
-  //width: 56.4%
-  //
-  //first block BIO
-  //
-.bio
-  //flex-grow: 1
-  display: flex
-  flex-wrap wrap
-  justify-content: center
-  padding-left: 4.5%
+//
+//First block BIO
+//
+@require "1_bio/bio_style"
 
-//padding-left: 19px
-
-.big-photo
-  margin-top: 28px
-  width: 209px
-  height: 209px
-  border-radius 50%
-  background-color: #006cb4
-  box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4
-
-.full-name__list > li > h2
-  margin: 0
-
-.full-name__list
-  margin-top: 40px
-  list-style-type: none
-  white-space: nowrap
-
-.full-name__name
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
-  font-size: 37px
-  letter-spacing: 0.5px
-  text-transform: uppercase
-
-.full-name__surname
-  font-family: 'MyriadPro-Bold', Arial, sans-serif;
-  font-size: 43px
-  text-transform: uppercase;
-  line-height: 44px
-  letter-spacing: -1px
-
-.full-name__position
-  text-align: center
-  font-family: 'MyriadPro-Bold', Arial, sans-serif;
-  text-transform: uppercase
-  line-height: 62px
-  font-size: 18px
-  letter-spacing: -1.4px
 
 //
 //second block Profile
 //
 .profile
-  //width: 425px
-  flex-grow: 1
   margin-top: 63px
 
 .profile .block-header__img
@@ -578,15 +516,3 @@ section
 
   .software__table .col-1
     padding-bottom: 240px
-
-
-
-//@media (max-width: 650px)
-//
-//  .big-photo
-//    margin-right: 30px
-//
-//@media (max-width: 601px)
-//
-//  .big-photo
-//    margin-right: 0
