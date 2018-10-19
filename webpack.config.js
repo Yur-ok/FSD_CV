@@ -75,7 +75,7 @@ module.exports = {
     },
 
     devServer: {
-        contentBase: path.join(__dirname, 'docs'),
+        // contentBase: path.join(__dirname, 'docs'),
         compress: true,
         overlay: true,
         open: true
@@ -84,7 +84,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin('docs', {}),
         new MiniCssExtractPlugin({
-            // filename: 'style.[hash].css',
+            filename: 'style.[hash].css',
         }),
         new HtmlWebpackPlugin({
             inject: true,
