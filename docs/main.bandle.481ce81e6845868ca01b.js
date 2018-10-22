@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/index.js!../node_modules/postcss-loader/src/index.js!../node_modules/stylus-loader/index.js!./style.styl":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader!./style.styl ***!
-  \***********************************************************************************************************************************************************************/
+/***/ "../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/index.js!../node_modules/postcss-loader/src/index.js!../node_modules/stylus-loader/index.js?resolve url!./style.styl":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader?resolve url!./style.styl ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./style.styl?../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./style.styl?../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader?resolve_url");
 
 /***/ }),
 
@@ -127,7 +127,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n// require('./style.styl');\r\n// require('1_bio/bio_style.styl');\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n// require('./style.styl');\r\n// require('1_bio/bio_style.styl');\r\n\r\n\r\n\r\n// import '2_profile/PROFILE.png';\r\n// import '3_contact/Phone.png';\r\n// import '4_skills/SKILLS.png';\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -138,7 +138,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader!./style.styl */ \"../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/index.js!../node_modules/postcss-loader/src/index.js!../node_modules/stylus-loader/index.js!./style.styl\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"../node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./style.styl?");
+eval("\nvar content = __webpack_require__(/*! !../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader!../node_modules/postcss-loader/src!../node_modules/stylus-loader?resolve url!./style.styl */ \"../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/index.js!../node_modules/postcss-loader/src/index.js!../node_modules/stylus-loader/index.js?resolve url!./style.styl\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"../node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./style.styl?");
 
 /***/ })
 
