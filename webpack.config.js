@@ -19,14 +19,14 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
-    context: path.resolve(__dirname, './'),
+    context: path.resolve(__dirname, './source'),
     entry: {
-        main: './source/index.js'
+        main: './index.js'
     },
 
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: '[name].bandle.[hash].js',
+        filename: '[name].bandle.[chunkhash].js',
     },
 
     optimization: {
@@ -78,17 +78,19 @@ module.exports = {
         contentBase: path.join(__dirname, 'docs'),
         compress: true,
         overlay: true,
+        open: true
     },
 
     plugins: [
         new CleanWebpackPlugin('docs', {}),
         new MiniCssExtractPlugin({
-            // filename: 'style.[hash].css',
+            filename: 'style.[hash].css',
         }),
         new HtmlWebpackPlugin({
             inject: true,
             hash: true,
-            template: './source/index.pug',
+            cache: true,
+            template: 'index.pug',
             filename: 'index.html'
         }),
         new WebpackMd5Hash(),

@@ -1,3 +1,4 @@
-require('./style.styl');
+// require('./style.styl');
+// require('1_bio/bio_style.styl');
 
-console.log('Hello from index.js');
+import './style.styl';
