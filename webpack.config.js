@@ -52,7 +52,7 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader',
-                    'stylus-loader'
+                    'stylus-loader?resolve url'
                 ]
             },
             {
