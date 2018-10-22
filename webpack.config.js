@@ -30,7 +30,7 @@ module.exports = {
     },
 
     optimization: {
-        // noEmitOnErrors: true,
+        noEmitOnErrors: true,
 
     },
 
@@ -71,14 +71,6 @@ module.exports = {
                     name: "./img/[name].[ext]",
                 }
             }
-            // {
-            //     test: /\.(png|svg|jpe?g|gif)$/,
-            //     exclude: /(node_modules|.git)/,
-            //     loader: 'url-loader',
-            //     options: {
-            //         fallback: 'file-loader?name=./img/[name].[ext]',
-            //     }
-            // }
         ]
     },
 
@@ -97,6 +89,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: true,
             hash: true,
+            cache: true,
             template: 'index.pug',
             filename: 'index.html'
         }),
