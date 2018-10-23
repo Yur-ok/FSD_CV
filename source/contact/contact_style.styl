@@ -1,3 +1,5 @@
+@import "../styl/variables.styl"
+
 //
 //third block Contact
 //
@@ -5,15 +7,13 @@
   margin-top: 48px
   display: flex
   flex-flow column wrap
-
-.contact .block-header__img
-  background-image: url('./Phone.png')
-  width: 74px
-  height: 74px
-  margin-right: 14px
-
-.contact .block-header__title
-  margin-right: 9px
+  & .block-header__img
+    background-image: url('./Phone.png')
+    width: 74px
+    height: 74px
+    margin-right: 14px
+  & .block-header__title
+    margin-right: 9px
 
 .contact__table
   border-collapse: collapse
@@ -21,22 +21,19 @@
   margin-left: -1.1px;
   text-align: left
   vertical-align: top
-
-.contact__table th
-  font-family: 'MyriadPro-Bold', Arial, sans-serif;
-  font-size: 22px
-  color: #006cb4
-  text-transform: uppercase
-  width: 131px
-  letter-spacing: -0.5px
-
-.contact__table td
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
-  font-size: 22px
-  letter-spacing: -0.4px
-
-.contact__table tr
-  height: 56px
+  & th
+    font-family: $fontBold, Arial, sans-serif;
+    font-size: 22px
+    color: $mainColor
+    text-transform: uppercase
+    width: 131px
+    letter-spacing: -0.5px
+  & td
+    font-family: $fontRegular, Arial, sans-serif;
+    font-size: 22px
+    letter-spacing: -0.4px
+  & tr
+    height: 56px
 
 @media (max-width: 1187px)
 
@@ -45,9 +42,8 @@
     flex-flow row wrap
     justify-content: space-around;
     margin: 0 5%
-
-  .contact tbody tr
-    width: 50%
+    & tr
+      width: 50%
 
 @media (max-width: 715px)
 

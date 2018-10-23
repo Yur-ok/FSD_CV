@@ -1,0 +1,59 @@
+@import "../styl/variables.styl"
+
+//
+//seventh block Software
+//
+.software
+    margin-top: 47px
+    & .block-header__img
+        background-image: url('./SOFTWARE.png')
+        width: 77px
+        height: 74px
+        margin-right: 20px
+    & .block-header__title
+        margin-right: 27px
+
+.software__table
+    border-collapse: collapse
+    width: auto
+    margin: 25px 6px 0
+    & tr
+        height: 45px
+        vertical-align: top
+    & .col-1
+        width: 100%
+    & h3
+        margin: 0
+        font-family: $fontRegular, Arial, sans-serif;
+        font-size: 27px
+        text-transform: uppercase
+        letter-spacing: -0.2px
+
+.software__progress-empty
+    width: 285px
+    height: 23px
+    background-color: $grayColor
+
+.software__progress
+    background-color: $mainColor
+
+
+@media (max-width: 1187px)
+
+    .software__table
+        margin: 25px auto 0
+        & .col-1
+            width: 60%
+            padding-right: 5%
+
+@media (max-width: 663px) and (min-width: 0px)
+
+    .software__table
+        margin: 25px auto 300px
+        & tr
+            display: flex
+            flex-direction: column
+        & td
+            display: block
+        & .col-1
+            padding-bottom: 240px

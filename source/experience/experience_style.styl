@@ -1,35 +1,35 @@
+@import "../styl/variables.styl"
+
 //
 //sixth block Experience
 //
 .experience
   margin-top: 53px
-
-.experience .block-header__img
-  background-image: url('./EXPERIENCE.png')
-  width: 79px
-  height: 77px
-  margin-right: 18px
-
-.experience .block-header__title
-  margin-right: 4px
+  & .block-header__img
+    background-image: url('./EXPERIENCE.png')
+    width: 79px
+    height: 77px
+    margin-right: 18px
+  & .block-header__title
+    margin-right: 4px
 
 .experience__list
   padding-left: 54px
   margin-top: 41px
 
 .experience__item-header
-  font-family: 'MyriadPro-Bold', Arial, sans-serif;
+  font-family: $fontBold, Arial, sans-serif;
   font-size: 27px
   text-transform: uppercase
   letter-spacing: -0.4px
 
 .experience__item--addText
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-family: $fontRegular, Arial, sans-serif;
   font-size: 27px
   text-transform: none
 
 .experience__item--upper
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-family: $fontRegular, Arial, sans-serif;
   text-transform: uppercase
   font-size: 27px
   margin-top: 3px
@@ -37,7 +37,7 @@
 
 .experience__item-description
   margin-top: 4px
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-family: $fontRegular, Arial, sans-serif;
   font-size: 16px
 
 .experience__list-item
@@ -57,7 +57,7 @@
   width: 20px
   height: 20px
   border-radius: 50%
-  background-color: #000;
+  background-color: $blackColor
 
 @media (max-width: 715px)
 

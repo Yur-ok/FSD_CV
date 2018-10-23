@@ -1,17 +1,17 @@
+@import "../styl/variables.styl"
+
 //
 //fourth block Skills
 //
 .skills
   margin-top: 34px
-
-.skills .block-header__img
-  background-image: url('./SKILLS.png')
-  height: 74px;
-  width: 74px;
-  margin-right: 10px
-
-.skills .block-header__title
-  margin-right: 15px
+  & .block-header__img
+    background-image: url('./SKILLS.png')
+    height: 74px;
+    width: 74px;
+    margin-right: 10px
+  & .block-header__title
+    margin-right: 15px
 
 .skill__header > h3
   margin-top: 0
@@ -23,7 +23,7 @@
   justify-content: space-between
   margin-top: 22px
   height: 286px
-  font-family: 'MyriadPro-Regular', Arial, sans-serif;
+  font-family: $fontRegular, Arial, sans-serif;
   font-size: 23px
   text-transform: uppercase
 
@@ -44,7 +44,7 @@
   width: 18px
   height: 18px
   border-radius: 50%
-  background-color: #e7e7e7
+  background-color: $grayColor
 
 .fill-point
-  background-color: #006cb4
+  background-color: $mainColor
