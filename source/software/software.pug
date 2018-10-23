@@ -1,6 +1,8 @@
+//
 //seventh block Software
+//
 section.software
-    .block-header.software__header
+    .block-header
         ul.block-header__items
             li.block-header__img
             li.block-header__title
@@ -15,10 +17,12 @@ section.software
         tr
             td.col-1
                 .software__progress-empty
-                    .photoshop
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(260)
             td.col-2
                 .software__progress-empty
-                    .dreamweaver
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(237)
         tr.software__item-header
             td.col-1
                 h3 Illustrator
@@ -27,10 +31,12 @@ section.software
         tr
             td.col-1
                 .software__progress-empty
-                    .illustrator
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(201)
             td.col-2
                 .software__progress-empty
-                    .ae
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(176)
         tr.software__item-header
             td.col-1
                 h3 Indesign
@@ -39,7 +45,9 @@ section.software
         tr
             td.col-1
                 .software__progress-empty
-                    .indesign
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(162)
             td.col-2
                 .software__progress-empty
-                    .html
+                    include ../mixins/Software_progress_width
+                    +softwareProgressWidth(260)
