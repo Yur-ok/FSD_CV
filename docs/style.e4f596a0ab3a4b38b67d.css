@@ -91,7 +91,7 @@ main {
           justify-content: center;
   padding-left: 4.5%;
 }
-.big-photo {
+.bio .big-photo {
   margin-top: 28px;
   width: 209px;
   height: 209px;
@@ -99,7 +99,7 @@ main {
   background-color: #006cb4;
   box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4;
 }
-.full-name__list > li > h2 {
+.bio .full-name__list > li > h2 {
   margin: 0;
 }
 .full-name__list {
@@ -107,20 +107,20 @@ main {
   list-style-type: none;
   white-space: nowrap;
 }
-.full-name__name {
+.full-name__list .full-name__name {
   font-family: 'MyriadPro-Regular', Arial, sans-serif;
   font-size: 37px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-.full-name__surname {
+.full-name__list .full-name__surname {
   font-family: 'MyriadPro-Bold', Arial, sans-serif;
   font-size: 43px;
   text-transform: uppercase;
   line-height: 44px;
   letter-spacing: -1px;
 }
-.full-name__position {
+.full-name__list .full-name__position {
   text-align: center;
   font-family: 'MyriadPro-Bold', Arial, sans-serif;
   text-transform: uppercase;
@@ -133,10 +133,10 @@ main {
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .big-photo {
+  .bio .big-photo {
     margin-right: 20px;
   }
-  .full-name__list {
+  .bio .full-name__list {
     align-self: center;
   }
 }
@@ -463,43 +463,16 @@ main {
   height: 23px;
   background-color: #e7e7e7;
 }
-.photoshop {
+.software__progress {
   background-color: #006cb4;
-  width: 260px;
-  height: 23px;
-}
-.dreamweaver {
-  background-color: #006cb4;
-  width: 237px;
-  height: 23px;
-}
-.illustrator {
-  background-color: #006cb4;
-  width: 201px;
-  height: 23px;
-}
-.ae {
-  background-color: #006cb4;
-  width: 176px;
-  height: 23px;
-}
-.indesign {
-  background-color: #006cb4;
-  width: 162px;
-  height: 23px;
-}
-.html {
-  background-color: #006cb4;
-  width: 260px;
-  height: 23px;
 }
 @media (max-width: 1187px) {
+  .software__table {
+    margin: 25px auto 0;
+  }
   .software__table .col-1 {
     width: 60%;
     padding-right: 5%;
-  }
-  .software__table {
-    margin: 25px auto 0;
   }
 }
 @media (max-width: 663px) and (min-width: 0px) {
@@ -563,7 +536,7 @@ main {
             justify-content: center;
     padding-left: 4.5%;
   }
-  .big-photo {
+  .bio .big-photo {
     margin-top: 28px;
     width: 209px;
     height: 209px;
@@ -571,7 +544,7 @@ main {
     background-color: #006cb4;
     box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4;
   }
-  .full-name__list > li > h2 {
+  .bio .full-name__list > li > h2 {
     margin: 0;
   }
   .full-name__list {
@@ -579,20 +552,20 @@ main {
     list-style-type: none;
     white-space: nowrap;
   }
-  .full-name__name {
+  .full-name__list .full-name__name {
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 37px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
-  .full-name__surname {
+  .full-name__list .full-name__surname {
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
     font-size: 43px;
     text-transform: uppercase;
     line-height: 44px;
     letter-spacing: -1px;
   }
-  .full-name__position {
+  .full-name__list .full-name__position {
     text-align: center;
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
     text-transform: uppercase;
@@ -696,35 +669,8 @@ main {
     height: 23px;
     background-color: #e7e7e7;
   }
-  .photoshop {
+  .software__progress {
     background-color: #006cb4;
-    width: 260px;
-    height: 23px;
-  }
-  .dreamweaver {
-    background-color: #006cb4;
-    width: 237px;
-    height: 23px;
-  }
-  .illustrator {
-    background-color: #006cb4;
-    width: 201px;
-    height: 23px;
-  }
-  .ae {
-    background-color: #006cb4;
-    width: 176px;
-    height: 23px;
-  }
-  .indesign {
-    background-color: #006cb4;
-    width: 162px;
-    height: 23px;
-  }
-  .html {
-    background-color: #006cb4;
-    width: 260px;
-    height: 23px;
   }
 }
 @media (max-width: 1187px) and (max-width: 1187px) {
@@ -732,10 +678,10 @@ main {
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .big-photo {
+  .bio .big-photo {
     margin-right: 20px;
   }
-  .full-name__list {
+  .bio .full-name__list {
     align-self: center;
   }
 }
@@ -788,12 +734,12 @@ main {
   }
 }
 @media (max-width: 1187px) and (max-width: 1187px) {
+  .software__table {
+    margin: 25px auto 0;
+  }
   .software__table .col-1 {
     width: 60%;
     padding-right: 5%;
-  }
-  .software__table {
-    margin: 25px auto 0;
   }
 }
 @media (max-width: 1187px) and (max-width: 663px) and (min-width: 0px) {
@@ -823,7 +769,7 @@ main {
             justify-content: center;
     padding-left: 4.5%;
   }
-  .big-photo {
+  .bio .big-photo {
     margin-top: 28px;
     width: 209px;
     height: 209px;
@@ -831,7 +777,7 @@ main {
     background-color: #006cb4;
     box-shadow: 0 0 0 14px #fff, 0 0 0 16px #006cb4;
   }
-  .full-name__list > li > h2 {
+  .bio .full-name__list > li > h2 {
     margin: 0;
   }
   .full-name__list {
@@ -839,20 +785,20 @@ main {
     list-style-type: none;
     white-space: nowrap;
   }
-  .full-name__name {
+  .full-name__list .full-name__name {
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     font-size: 37px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
-  .full-name__surname {
+  .full-name__list .full-name__surname {
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
     font-size: 43px;
     text-transform: uppercase;
     line-height: 44px;
     letter-spacing: -1px;
   }
-  .full-name__position {
+  .full-name__list .full-name__position {
     text-align: center;
     font-family: 'MyriadPro-Bold', Arial, sans-serif;
     text-transform: uppercase;
@@ -1016,10 +962,10 @@ main {
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .big-photo {
+  .bio .big-photo {
     margin-right: 20px;
   }
-  .full-name__list {
+  .bio .full-name__list {
     align-self: center;
   }
 }
@@ -1115,44 +1061,17 @@ main {
     height: 23px;
     background-color: #e7e7e7;
   }
-  .photoshop {
+  .software__progress {
     background-color: #006cb4;
-    width: 260px;
-    height: 23px;
-  }
-  .dreamweaver {
-    background-color: #006cb4;
-    width: 237px;
-    height: 23px;
-  }
-  .illustrator {
-    background-color: #006cb4;
-    width: 201px;
-    height: 23px;
-  }
-  .ae {
-    background-color: #006cb4;
-    width: 176px;
-    height: 23px;
-  }
-  .indesign {
-    background-color: #006cb4;
-    width: 162px;
-    height: 23px;
-  }
-  .html {
-    background-color: #006cb4;
-    width: 260px;
-    height: 23px;
   }
 }
 @media (max-width: 663px) and (min-width: 0px) and (max-width: 1187px) {
+  .software__table {
+    margin: 25px auto 0;
+  }
   .software__table .col-1 {
     width: 60%;
     padding-right: 5%;
-  }
-  .software__table {
-    margin: 25px auto 0;
   }
 }
 @media (max-width: 663px) and (min-width: 0px) and (max-width: 663px) and (min-width: 0px) {

@@ -127,7 +127,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n// require('./style.styl');\r\n// require('1_bio/bio_style.styl');\r\n\r\n\r\n\r\n// import '2_profile/PROFILE.png';\r\n// import '3_contact/Phone.png';\r\n// import '4_skills/SKILLS.png';\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.styl */ \"./style.styl\");\n/* harmony import */ var _style_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_styl__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
