@@ -1,11 +1,7 @@
 // fifth block Education
 section.education
-    .block-header
-        ul.block-header__items
-            li.block-header__img
-                li.block-header__title
-                    h2 Education
-                li.block-header__line
+    include ../block_header/block_header
+    +header('Education')
     ul.education__list
         li.education__item
             ul.education__item-description

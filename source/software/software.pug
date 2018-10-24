@@ -2,12 +2,8 @@
 //seventh block Software
 //
 section.software
-    .block-header
-        ul.block-header__items
-            li.block-header__img
-            li.block-header__title
-                h2 Software
-            li.block-header__line
+    include ../block_header/block_header
+    +header('Software')
     table.software__table
         tr.software__item-header
             td.col-1

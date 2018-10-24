@@ -1,78 +1,56 @@
 @font-face
-  font-family: 'MyriadPro-Bold';
-  src: url('./fonts/MyriadPro-Bold.woff') format('woff');
+    font-family: 'MyriadPro-Bold';
+    src: url('./fonts/MyriadPro-Bold.woff') format('woff');
 
 @font-face
-  font-family: 'MyriadPro-Regular';
-  src: url('./fonts/MyriadPro-Regular.woff') format('woff');
+    font-family: 'MyriadPro-Regular';
+    src: url('./fonts/MyriadPro-Regular.woff') format('woff');
 
 @font-face
-  font-family: 'MyriadPro-LightSemiExt';
-  src: url('./fonts/MyriadPro-LightSemiExt.woff') format('woff');
+    font-family: 'MyriadPro-LightSemiExt';
+    src: url('./fonts/MyriadPro-LightSemiExt.woff') format('woff');
 
 body
-  margin: 0
-  background-color: #ddd
-  display: flex;
-  justify-content: center;
+    margin: 0
+    background-color: #ddd
+    display: flex;
+    justify-content: center;
 
 //
 // Common rules
 //
 p
-  margin: 0
-
-ul
-  list-style-type: none
-  margin: 0
-  padding: 0
-
-.block-header__items
-  display: flex
-  align-items: center
-
-.block-header__img
-  background-size: cover
-  background-repeat: no-repeat
-  flex-shrink 0
-
-.block-header__title
-  font-family: 'MyriadPro-Bold', Arial, sans-serif;
-  text-transform: uppercase
-  font-size: 29px
-  letter-spacing: -1px
-  & > h2
     margin: 0
 
-.block-header__line
-  background-color: #006cb4
-  height: 5px
-  width: 5px
-  flex-grow 1
+ul
+    list-style-type: none
+    margin: 0
+    padding: 0
 
+@import "./block_header/block_header.styl"
 
 main
-  background-color: #fff
-  width: 1280px
-  padding-top: 4.1%
-  padding-left: 3.3%
-  padding-right: 3.1%
-  padding-bottom: 3.4%
-  box-sizing: border-box
-  display: flex
-  flex: 0 1 auto
-  flex-flow row wrap
-  justify-content: space-between;
+    background-color: #fff
+    width: 1280px
+    padding-top: 4.1%
+    padding-left: 3.3%
+    padding-right: 3.1%
+    padding-bottom: 3.4%
+    box-sizing: border-box
+    display: flex
+    flex: 0 1 auto
+    flex-flow row wrap
+    justify-content: space-between;
 
 .first-col
-  width: 425px
-  margin-right: 20px
-  flex: 0 0 auto
-  flex-wrap wrap
+    width: 425px
+    margin-right: 20px
+    flex: 0 0 auto
+    flex-wrap wrap
 
 .second-col
-  width: 652px
-  flex: 0 1 auto
+    width: 652px
+    flex: 0 1 auto
 
 //
 //First block BIO
@@ -109,68 +87,63 @@ main
 //
 @import "./software/software_style.styl"
 
-
-
 @media (max-width: 1187px)
 
-  //common rules
+    //common rules
+    main
+        padding-left: 3%
+        padding-right: 3%
 
-  main
-    padding-left: 3%
-    padding-right: 3%
+    .block-header__items
+        flex-flow column wrap
 
-  .block-header__items
-    flex-flow column wrap
+    .profile .block-header__img
+    .profile .block-header__title
+    .contact .block-header__img
+    .contact .block-header__title
+    .skills .block-header__img
+    .skills .block-header__title
+    .education .block-header__img
+    .education .block-header__title
+    .experience .block-header__img
+    .experience .block-header__title
+    .software .block-header__img
+    .software .block-header__title
+        margin: 0
 
-  .profile .block-header__img
-  .profile .block-header__title
-  .contact .block-header__img
-  .contact .block-header__title
-  .skills .block-header__img
-  .skills .block-header__title
-  .education .block-header__img
-  .education .block-header__title
-  .experience .block-header__img
-  .experience .block-header__title
-  .software .block-header__img
-  .software .block-header__title
-    margin: 0
+    .block-header__line
+        width: 100%
 
-  .block-header__line
-    width: 100%
+    .first-col
+        margin: 0
+        width: 100%
+        margin-bottom: 50px
 
-  .first-col
-    margin: 0
-    width: 100%
-    margin-bottom: 50px
+    .second-col
+        width: 100%
 
-  .second-col
-    width: 100%
+    //end common rules
+    @import "bio/bio_style.styl"
 
-  //end common rules
+    @import "profile/profile_style.styl"
 
-  @import "bio/bio_style.styl"
+    @import "contact/contact_style.styl"
 
-  @import "profile/profile_style.styl"
-
-  @import "contact/contact_style.styl"
-
-  @import "software/software_style.styl"
-
+    @import "software/software_style.styl"
 
 @media (max-width: 715px)
 
-  @import "bio/bio_style.styl"
+    @import "bio/bio_style.styl"
 
-  @import "contact/contact_style.styl"
+    @import "contact/contact_style.styl"
 
-  @import "education/education_style.styl"
+    @import "education/education_style.styl"
 
-  @import "experience/experience_style.styl"
+    @import "experience/experience_style.styl"
 
 @media (max-width: 663px) and (min-width: 0px)
 
-  body
-    background-color: #fff;
+    body
+        background-color: #fff;
 
-  @import "software/software_style.styl"
+    @import "software/software_style.styl"

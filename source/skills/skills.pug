@@ -1,11 +1,7 @@
 // fourth block Skills
 section.skills
-    .block-header
-        ul.block-header__items
-            li.block-header__img
-            li.block-header__title
-                h2 Skills
-            li.block-header__line
+    include ../block_header/block_header
+    +header('Skills')
     ul.skills__list
         li.skills__list-item
             ul.skills__description
