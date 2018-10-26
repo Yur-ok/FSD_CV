@@ -1,11 +1,7 @@
 // sixth block Experience
 section.experience
-    .block-header.experience__header
-        ul.block-header__items
-            li.block-header__img
-            li.block-header__title
-                h2 Experience
-            li.block-header__line
+    include ../block_header/block_header
+    +header('Experience')
     ul.experience__list
         ul.experience__list-item
             li.experience__item-header

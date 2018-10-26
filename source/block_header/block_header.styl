@@ -1,0 +1,43 @@
+@import "../styl/variables.styl"
+
+.block-header__items
+    display: flex
+    flex-flow row nowrap
+    justify-content: space-between
+    align-items: center
+    & .block-header__img
+    & .block-header__title
+        margin-right: 10px
+
+.block-header__img
+    background-size: contain
+    background-repeat: no-repeat
+    width: 79px
+    height: 79px
+    flex-shrink 0
+    .profile &
+        background-image: url('../profile/profile.png')
+    .contact &
+        background-image: url('../contact/contact.png')
+    .skills &
+        background-image: url('../skills/skills.png')
+    .education &
+        background-image: url('../education/education.png')
+    .experience &
+        background-image: url('../experience/experience.png')
+    .software &
+        background-image: url('../software/software.png')
+
+.block-header__title
+    font-family: $fontBold, Arial, sans-serif;
+    text-transform: uppercase
+    font-size: 29px
+    letter-spacing: -1px
+    & > h2
+        margin: 0
+
+.block-header__line
+    background-color: $mainColor
+    height: 5px
+    width: 5px
+    flex-grow 1

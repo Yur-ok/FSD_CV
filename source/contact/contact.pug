@@ -1,11 +1,7 @@
 //third block Contact
 section.contact
-    .block-header
-        ul.block-header__items
-            li.block-header__img
-            li.block-header__title
-                h2 Contact
-            li.block-header__line
+    include ../block_header/block_header
+    +header('Contact')
     table.contact__table
         tr
             th Address
