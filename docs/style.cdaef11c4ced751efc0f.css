@@ -29,13 +29,42 @@ ul {
 .block-header__items {
   display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
 }
+.block-header__items .block-header__img,
+.block-header__items .block-header__title {
+  margin-right: 10px;
+}
 .block-header__img {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  width: 79px;
+  height: 79px;
   flex-shrink: 0;
+}
+.profile .block-header__img {
+  background-image: url(./img/profile.png);
+}
+.contact .block-header__img {
+  background-image: url(./img/contact.png);
+}
+.skills .block-header__img {
+  background-image: url(./img/skills.png);
+}
+.education .block-header__img {
+  background-image: url(./img/education.png);
+}
+.experience .block-header__img {
+  background-image: url(./img/experience.png);
+}
+.software .block-header__img {
+  background-image: url(./img/software.png);
 }
 .block-header__title {
   font-family: 'MyriadPro-Bold', Arial, sans-serif;
@@ -157,15 +186,6 @@ main {
 .profile {
   margin-top: 63px;
 }
-.profile .block-header__img {
-  background-image: url(./img/PROFILE.png);
-  width: 77px;
-  height: 74px;
-  margin-right: 10px;
-}
-.profile .block-header__title {
-  margin-right: 11px;
-}
 .profile__description {
   font-family: 'MyriadPro-Regular', Arial, sans-serif;
   margin-top: 13px;
@@ -187,15 +207,6 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-flow: column wrap;
-}
-.contact .block-header__img {
-  background-image: url(./img/Phone.png);
-  width: 74px;
-  height: 74px;
-  margin-right: 14px;
-}
-.contact .block-header__title {
-  margin-right: 9px;
 }
 .contact__table {
   border-collapse: collapse;
@@ -251,15 +262,6 @@ main {
 .skills {
   margin-top: 34px;
 }
-.skills .block-header__img {
-  background-image: url(./img/SKILLS.png);
-  height: 74px;
-  width: 74px;
-  margin-right: 10px;
-}
-.skills .block-header__title {
-  margin-right: 15px;
-}
 .skill__header > h3 {
   margin-top: 0;
   margin-bottom: 8px;
@@ -306,15 +308,6 @@ main {
 }
 .fill-point {
   background-color: #006cb4;
-}
-.education .block-header__img {
-  background-image: url(./img/EDUCATION.png);
-  width: 77px;
-  height: 74px;
-  margin-right: 19px;
-}
-.education .block-header__title {
-  margin-right: 10px;
 }
 .education__item::before {
   content: '';
@@ -369,15 +362,6 @@ main {
 .experience {
   margin-top: 53px;
 }
-.experience .block-header__img {
-  background-image: url(./img/EXPERIENCE.png);
-  width: 79px;
-  height: 77px;
-  margin-right: 18px;
-}
-.experience .block-header__title {
-  margin-right: 4px;
-}
 .experience__list {
   padding-left: 54px;
   margin-top: 41px;
@@ -429,15 +413,6 @@ main {
 }
 .software {
   margin-top: 47px;
-}
-.software .block-header__img {
-  background-image: url(./img/SOFTWARE.png);
-  width: 77px;
-  height: 74px;
-  margin-right: 20px;
-}
-.software .block-header__title {
-  margin-right: 27px;
 }
 .software__table {
   border-collapse: collapse;
@@ -576,15 +551,6 @@ main {
   .profile {
     margin-top: 63px;
   }
-  .profile .block-header__img {
-    background-image: url(./img/PROFILE.png);
-    width: 77px;
-    height: 74px;
-    margin-right: 10px;
-  }
-  .profile .block-header__title {
-    margin-right: 11px;
-  }
   .profile__description {
     font-family: 'MyriadPro-Regular', Arial, sans-serif;
     margin-top: 13px;
@@ -600,15 +566,6 @@ main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-flow: column wrap;
-  }
-  .contact .block-header__img {
-    background-image: url(./img/Phone.png);
-    width: 74px;
-    height: 74px;
-    margin-right: 14px;
-  }
-  .contact .block-header__title {
-    margin-right: 9px;
   }
   .contact__table {
     border-collapse: collapse;
@@ -635,15 +592,6 @@ main {
   }
   .software {
     margin-top: 47px;
-  }
-  .software .block-header__img {
-    background-image: url(./img/SOFTWARE.png);
-    width: 77px;
-    height: 74px;
-    margin-right: 20px;
-  }
-  .software .block-header__title {
-    margin-right: 27px;
   }
   .software__table {
     border-collapse: collapse;
@@ -814,15 +762,6 @@ main {
     -webkit-box-direction: normal;
             flex-flow: column wrap;
   }
-  .contact .block-header__img {
-    background-image: url(./img/Phone.png);
-    width: 74px;
-    height: 74px;
-    margin-right: 14px;
-  }
-  .contact .block-header__title {
-    margin-right: 9px;
-  }
   .contact__table {
     border-collapse: collapse;
     margin-top: 18px;
@@ -845,15 +784,6 @@ main {
   }
   .contact__table tr {
     height: 56px;
-  }
-  .education .block-header__img {
-    background-image: url(./img/EDUCATION.png);
-    width: 77px;
-    height: 74px;
-    margin-right: 19px;
-  }
-  .education .block-header__title {
-    margin-right: 10px;
   }
   .education__item::before {
     content: '';
@@ -902,15 +832,6 @@ main {
   }
   .experience {
     margin-top: 53px;
-  }
-  .experience .block-header__img {
-    background-image: url(./img/EXPERIENCE.png);
-    width: 79px;
-    height: 77px;
-    margin-right: 18px;
-  }
-  .experience .block-header__title {
-    margin-right: 4px;
   }
   .experience__list {
     padding-left: 54px;
@@ -1027,15 +948,6 @@ main {
   }
   .software {
     margin-top: 47px;
-  }
-  .software .block-header__img {
-    background-image: url(./img/SOFTWARE.png);
-    width: 77px;
-    height: 74px;
-    margin-right: 20px;
-  }
-  .software .block-header__title {
-    margin-right: 27px;
   }
   .software__table {
     border-collapse: collapse;
